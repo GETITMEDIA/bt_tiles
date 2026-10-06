@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/x-icon" href="images/fav.png">
+  <title>Tiles Accessories - Bharathiya Tiles</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/bharathiya-header.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom-style.css">
+  <link href="css/style-dark.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="top-navbar il-top-navbar">
+
+    <!-- Logo -->
+    <div class="logo il-logo">
+      <img src="images/bt_logo.png" alt="Bharathiya Tiles Logo" class="il-logo-img">
+
+      <div class="logo-text il-logo-text">
+        <h2 class="il-logo-title">Bharathiya Tiles</h2>
+      </div>
+    </div>
+
+    <!-- Center Menu -->
+    <div class="nav-center il-nav-center">
+      <a href="https://www.google.com/maps/search/Bharathiya+Tiles" target="_blank" class="il-store-link"><i
+          class="fa fa-map-marker il-store-icon"></i> Store Locator</a>
+      <a href="tel:+917500275005" class="phone il-phone-link">
+        <i class="fa fa-phone il-phone-icon"></i> +91-7500275005
+      </a>
+    </div>
+
+    <!-- Right Section -->
+    <div class="nav-right il-nav-right">
+      <a href="https://search.google.com/local/writereview?placeid=ChIJtdsRP2xhUzoRtN110uGST5E" target="_blank"
+        class="il-review-link"><i class="fa fa-star"></i> Write a Review</a>
+      <i class="fa fa-bars il-menu-icon" onclick="toggleMenu()"></i>
+    </div>
+
+  </header>
+
+  <!-- Side Menu -->
+  <div class="side-menu" id="sideMenu">
+    <div class="close-btn" onclick="toggleMenu()">
+      <i class="fa fa-times"></i>
+    </div>
+    <div class="mobile-categories">
+
+      <a class='category' href='index.html'>
+        <img src="images/nav-icons/home.png">
+        <p>Home</p>
+      </a>
+
+      <a class='category' href='all-tiles.html'>
+        <img src="images/nav-icons/tiles.png">
+        <p>Tiles</p>
+      </a>
+
+      <a class='category' href='paints.html'>
+        <img src="images/nav-icons/paints.png">
+        <p>Paints</p>
+      </a>
+
+      <a class='category' href='sanitary.html'>
+        <img src="images/nav-icons/sanitary.png">
+        <p>Sanitarywares</p>
+      </a>
+
+      <a class='category' href='fiting.html'>
+        <img src="images/nav-icons/cpfit.png">
+        <p>CP Fit</p>
+      </a>
+
+      <a class='category' href='sink.html'>
+        <img src="images/nav-icons/kitchensink.png">
+        <p>Kitchen Sinks</p>
+      </a>
+
+      <a class='category' href='watertank.html'>
+        <img src="images/nav-icons/watertank.png">
+        <p>Water Tank</p>
+      </a>
+
+      <a href="#" class="category">
+        <img src="images/nav/wallcladding.jpg">
+        <p>Wall Cladding</p>
+      </a>
+
+      <a class='category' href='manhole.html'>
+        <img src="images/nav-icons/manhole.png">
+        <p>Manhole Covers</p>
+      </a>
+
+      <a class='category' href='chimmey.html'>
+        <img src="images/nav-icons/chimney.png">
+        <p>Chimney & Hobs</p>
+      </a>
+
+      <a class='category' href='door.html'>
+        <img src="images/nav-icons/doors.png">
+        <p>Doors</p>
+      </a>
+
+      <a class='category' href='bathtub.html'>
+        <img src="images/nav-icons/bathtub.png">
+        <p>Bath Tub</p>
+      </a>
+      <a class='category' href='tile-accessories.html'>
+        <img src="images/nav-icons/tile-accessories.png">
+        <p>Tiles Accessories</p>
+      </a>
+      <a class='category' href='waterproofing.html'>
+        <img src="images/nav-icons/water-proofing.png">
+        <p>Waterproofing</p>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- New Category Navbar -->
+  <section class="bt-catnav">
+    <button class="catnav-arrow catnav-arrow-left" aria-label="Scroll left" onclick="btCatnavScroll(this,-1)"><i
+        class="fas fa-chevron-left"></i></button>
+    <div class="catnav-bar">
+      <a href="index.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/home.png" alt="Home"></span>
+        <span class="catnav-label">Home</span>
+      </a>
+      <a href="all-tiles.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/tiles.png" alt="Tiles"></span>
+        <span class="catnav-label">Tiles</span>
+      </a>
+      <a href="paints.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/paints.png" alt="Paints"></span>
+        <span class="catnav-label">Paints</span>
+      </a>
+      <a href="sanitary.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/sanitary.png" alt="Sanitarywares"></span>
+        <span class="catnav-label">Sanitarywares</span>
+      </a>
+      <a href="fiting.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/cpfit.png" alt="CPI Fittings"></span>
+        <span class="catnav-label">CPI Fittings</span>
+      </a>
+      <a href="sink.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/kitchensink.png" alt="Kitchen Sinks"></span>
+        <span class="catnav-label">Kitchen Sinks</span>
+      </a>
+      <a href="watertank.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/watertank.png" alt="Water Tank"></span>
+        <span class="catnav-label">Water Tank</span>
+      </a>
+      <a href="manhole.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/manhole.png" alt="Manhole Covers"></span>
+        <span class="catnav-label">Manhole Covers</span>
+      </a>
+      <a href="chimmey.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/chimney.png" alt="Chimney &amp; Hobs"></span>
+        <span class="catnav-label">Chimney &amp; Hobs</span>
+      </a>
+      <a href="door.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/doors.png" alt="Doors"></span>
+        <span class="catnav-label">Doors</span>
+      </a>
+      <a href="bathtub.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/bathtub.png" alt="Bath Tub"></span>
+        <span class="catnav-label">Bath Tub</span>
+      </a>
+      <a href="tile-accessories.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/tile-accessories.png" alt="Bath Tub"></span>
+        <span class="catnav-label">Tiles Accessories</span>
+      </a>
+      <a href="waterproofing.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/water-proofing.png" alt="Bath Tub"></span>
+        <span class="catnav-label">Waterproofing</span>
+      </a>
+
+    </div>
+    <button class="catnav-arrow catnav-arrow-right" aria-label="Scroll right" onclick="btCatnavScroll(this,1)"><i
+        class="fas fa-chevron-right"></i></button>
+  </section>
+  <script>
+    function btCatnavScroll(btn, dir) {
+      var section = btn.closest('.bt-catnav');
+      var bar = section && section.querySelector('.catnav-bar');
+      if (!bar) return;
+      bar.scrollBy({ left: dir * 240, behavior: 'smooth' });
+    }
+  </script>
+
+  <script>
+    (function () {
+      var current = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+      document.querySelectorAll('.bt-catnav .catnav-item').forEach(function (item) {
+        var href = (item.getAttribute('href') || '').toLowerCase();
+        if (href === current) {
+          item.classList.add('catnav-active');
+        } else {
+          item.classList.remove('catnav-active');
+        }
+      });
+    })();
+  </script>
+
+  <!-- Floating Social Icons -->
+  <div class="bt-social-float bt-social-left">
+    <a href="https://wa.me/917500275005?text=Hi%2C%20I%27m%20interested%20in%20your%20products" target="_blank"
+      rel="noopener" class="bt-social-whatsapp" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  <div class="bt-social-float bt-social-right">
+    <a href="https://www.instagram.com/bharathiyatilespondicherry/" target="_blank" rel="noopener"
+      class="bt-social-instagram" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/bharathiyatiles/" target="_blank" rel="noopener" class="bt-social-facebook"
+      title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.justdial.com/Pondicherry/Bharathiya-Tiles-Opposite-Raja-Rajeshwari-Thirumana-Mandapam-Lawspet-Pondicherry/0413PX413-X413-131019120449-D1J7_BZDET"
+      target="_blank" rel="noopener" class="bt-social-justdial" title="Justdial">
+      <img src="images/icons/jd.png" alt="Justdial">
+    </a>
+    <a href="https://www.indiamart.com/bharathiya-tiles-pondicherry/profile.html?srsltid=AfmBOooc_xpa9SiDgxruQojzZa9PrJ9lx3-OnhUPQs5O94nqLRVmVcNa"
+      target="_blank" rel="noopener" class="bt-social-justdial" title="India-mart">
+      <img src="images/icons/india-mart.png" alt="Justdial">
+    </a>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("active");
+    }
+  </script>
+
+  <div class="page-wrapper">
+
+    <!-- project-section-two -->
+    <section class="project-section-two image-box-showcase">
+      <div class="auto-container">
+        <div class="sec-title-two text-center">
+          <h2>Tile Accessories</h2>
+        </div>
+        <div class="row">
+          <!-- project-block-two -->
+          <div class="project-block-two col-lg-4 col-md-6 wow fadeInUp">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image overlay-anim"><a href='tiles-pages/bathroom-wall.html' tabindex='-1'><img
+                      src="images/tile-accessories/tile-adhesive.jpeg" alt=""></a></figure>
+                <div class="content-box">
+
+                  <h4 class="title"><a href='tiles-pages/bathroom-wall.html' title>Tiles Adhesive</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- project-block-two -->
+          <div class="project-block-two col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image overlay-anim"><a href='tiles-pages/bathroom-floor.html' tabindex='-1'><img
+                      src="images/tile-accessories/tile-grout.jpeg" alt=""></a></figure>
+                <div class="content-box">
+
+                  <h4 class="title"><a href='tiles-pages/bathroom-floor.html' title>Tiles Grout</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- project-block-two -->
+          <div class="project-block-two col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image overlay-anim"><a href='tiles-pages/kitchen-wall.html' tabindex='-1'><img
+                      src="images/tile-accessories/tile-spacer.jpeg" alt=""></a></figure>
+                <div class="content-box">
+
+                  <h4 class="title"><a href='tiles-pages/kitchen-wall.html' title>Tiles Spacer</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- project-block-two -->
+          <div class="project-block-two col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image overlay-anim"><a href='tiles-pages/kitchen-floor.html' tabindex='-1'><img
+                      src="images/tile-accessories/epoxy-tile-grout.png" alt=""></a></figure>
+                <div class="content-box">
+
+                  <h4 class="title"><a href='tiles-pages/kitchen-floor.html' title>Epoxy Tiles Grout</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End project-section -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer footer-style-one">
+      <!-- Widgets Section -->
+      <div class="widgets-section">
+        <div class="container">
+          <div class="row">
+            <!-- Footer Column 1: Logo -->
+            <div class="footer-column col-lg-3 col-sm-6 wow fadeInLeft" data-wow-delay="400ms">
+              <div class="footer-widget contact-widget">
+                <div class="logo-box">
+                  <img src="images/bt_logo.png">
+                </div>
+              </div>
+              <div class="footer-widget about-widget">
+                <h4 class="widget-title">Follow Us</h4>
+                <ul class="social-icons">
+                  <li><a href="https://www.facebook.com/bharathiyatiles/" target="_blank" rel="noopener"><i
+                        class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li><a href="https://www.instagram.com/bharathiyatilespondicherry/" target="_blank" rel="noopener"><i
+                        class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Footer Column 2: Contact Details -->
+            <div class="footer-column col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="600ms">
+              <div class="footer-widget contact-widget">
+                <div class="widget-content">
+                  <div class="content-box">
+                    <div class="icon-box">
+                      <i class="flaticon-envelope"></i>
+                    </div>
+                    <span>Mail us</span>
+                    <h6 class="title">support@bttiles.com</h6>
+                  </div>
+                  <div class="content-box">
+                    <div class="icon-box">
+                      <i class="flaticon-clock-3"></i>
+                    </div>
+                    <span>Open Time</span>
+                    <h6 class="title">09:45 AM - 08:00 PM (Mon - Sat)<br>09:45 AM - 02:00 PM (Sunday)</h6>
+                  </div>
+                  <div class="content-box">
+                    <div class="icon-box">
+                      <i class="flaticon-phone-call"></i>
+                    </div>
+                    <span>Call</span>
+                    <h6 class="title">7500275005</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Footer Column 3: Quick Links -->
+            <div class="footer-column col-lg-2 col-sm-6 wow fadeInLeft" data-wow-delay="800ms">
+              <div class="footer-widget links-widge">
+                <h4 class="widget-title">Quick Links</h4>
+                <div class="widget-content">
+                  <ul class="user-links style-two">
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='about.html'>About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Footer Column 4: Follow Us -->
+            <div class="footer-column col-lg-3 col-sm-6 wow fadeInLeft" data-wow-delay="1000ms">
+              <div class="footer-widget links-widge">
+                <h4 class="widget-title">Our Products</h4>
+                <div class="widget-content">
+                  <ul class="user-links style-two">
+                    <li><a href='index.html'>Tiles</a></li>
+                    <li><a href='watertank.html'>Water Tank</a></li>
+                    <li><a href='door.html'>PVC & Wooden Door</a></li>
+                    <li><a href="all-tiles.html">Tiles Accessories</a></li>
+                    <li><a href="page-contact.html">Sanitary Wares</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="inner-container text-center">
+            <div class="copyright-text">© 2026 Bharathiya Tiles. All rights reserved.</div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-to-top scroll-to-target arrow-btn" data-target="html">
+        <i class="fa-sharp fa-solid fa-arrow-up"></i>
+      </div>
+    </footer>
+    <!--End Main Footer -->
+  </div><!-- End Page Wrapper -->
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slick-animation.min.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="js/progress-bar.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/appear.js"></script>
+  <script src="js/mixitup.js"></script>
+  <script src="js/script.js"></script>
+
+  <link rel="stylesheet" href="css/responsive-fixes.css">
+</body>
+
+</html>

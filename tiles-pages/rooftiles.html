@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from moonlit-druid-56b88f.netlify.app/rooftiles by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 10:16:13 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../images/fav.png">
+  <title>Tiles Navbar · animated</title>
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/bharathiya-header.css">
+
+  <!-- Footer CSS Dependencies -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom-style.css">
+</head>
+
+<body>
+  <!-- Top Navbar (enriched with hover & transition effects) -->
+
+
+  <header class="il-top-navbar">
+    <!-- Logo -->
+    <div class="logo il-logo">
+      <img src="../images/bt_logo.png" alt="Bharathiya Tiles Logo" class="il-logo-img">
+      <div class="logo-text il-logo-text">
+        <h2 class="il-logo-title">Bharathiya Tiles</h2>
+      </div>
+    </div>
+
+    <!-- Center Menu -->
+    <div class="nav-center il-nav-center">
+      <a href="https://www.google.com/maps/search/Bharathiya+Tiles" target="_blank" class="il-store-link"><i
+          class="fa fa-map-marker il-store-icon"></i> Store Locator</a>
+      <a href="tel:+917500275005" class="phone il-phone-link">
+        <i class="fa fa-phone il-phone-icon"></i> +91-7500275005
+      </a>
+    </div>
+
+    <!-- Right Section -->
+    <div class="nav-right il-nav-right">
+      <a href="https://search.google.com/local/writereview?placeid=ChIJr-4V5c7DqTsRz69b_2q1hK0" target="_blank"
+        class="il-review-link"><i class="fa fa-star"></i> Write a Review</a>
+      <i class="fa fa-bars il-menu-icon" onclick="toggleMenu()"></i>
+    </div>
+
+  </header>
+
+  <!-- Side Menu -->
+  <div class="side-menu" id="sideMenu">
+    <div class="close-btn" onclick="toggleMenu()">
+      <i class="fa fa-times"></i>
+    </div>
+    <div class="mobile-categories">
+
+      <a class='category' href='../index.html'>
+        <img src="../images/nav-icons/home.png">
+        <p>Home</p>
+      </a>
+
+      <a class='category' href='all-tiles.html'>
+        <img src="../images/nav-icons/tiles.png">
+        <p>Tiles</p>
+      </a>
+
+      <a class='category' href='../paints.html'>
+        <img src="../images/nav-icons/paints.png">
+        <p>Paints</p>
+      </a>
+
+      <a class='category' href='../sanitary.html'>
+        <img src="../images/nav-icons/sanitary.png">
+        <p>Sanitarywares</p>
+      </a>
+
+      <a class='category' href='../fiting.html'>
+        <img src="../images/nav-icons/cpfit.png">
+        <p>CP Fit</p>
+      </a>
+
+      <a class='category' href='../sink.html'>
+        <img src="../images/nav-icons/kitchensink.png">
+        <p>Kitchen Sinks</p>
+      </a>
+
+      <a class='category' href='../watertank.html'>
+        <img src="../images/nav-icons/watertank.png">
+        <p>Water Tank</p>
+      </a>
+
+      <a href="#" class="category">
+        <img src="../images/nav/wallcladding.jpg">
+        <p>Wall Cladding</p>
+      </a>
+
+      <a class='category' href='../manhole.html'>
+        <img src="../images/nav-icons/manhole.png">
+        <p>Manhole Covers</p>
+      </a>
+
+      <a class='category' href='../chimmey.html'>
+        <img src="../images/nav-icons/chimney.png">
+        <p>Chimney & Hobs</p>
+      </a>
+
+      <a class='category' href='../door.html'>
+        <img src="../images/nav-icons/doors.png">
+        <p>Doors</p>
+      </a>
+
+      <a class='category' href='../bathtub.html'>
+        <img src="../images/nav-icons/bathtub.png">
+        <p>Bath Tub</p>
+      </a>
+      <a class='category' href='../tile-accessories.html'>
+        <img src="../images/nav-icons/tile-accessories.png">
+        <p>Tiles Accessories</p>
+      </a>
+      <a class='category' href='../waterproofing.html'>
+        <img src="../images/nav-icons/water-proofing.png">
+        <p>Waterproofing</p>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- New Category Navbar -->
+  <section class="bt-catnav">
+
+    <button class="catnav-arrow catnav-arrow-left" aria-label="Scroll left" onclick="btCatnavScroll(this,-1)"><i
+        class="fas fa-chevron-left"></i></button>
+    <div class="catnav-bar">
+      <a href="../index.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/home.png" alt="Home"></span>
+        <span class="catnav-label">Home</span>
+      </a>
+      <a href="all-tiles.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/tiles.png" alt="Tiles"></span>
+        <span class="catnav-label">Tiles</span>
+      </a>
+      <a href="../paints.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/paints.png" alt="Paints"></span>
+        <span class="catnav-label">Paints</span>
+      </a>
+      <a href="../sanitary.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/sanitary.png" alt="Sanitarywares"></span>
+        <span class="catnav-label">Sanitarywares</span>
+      </a>
+      <a href="../fiting.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/cpfit.png" alt="CPI Fittings"></span>
+        <span class="catnav-label">CPI Fittings</span>
+      </a>
+      <a href="../sink.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/kitchensink.png" alt="Kitchen Sinks"></span>
+        <span class="catnav-label">Kitchen Sinks</span>
+      </a>
+      <a href="../watertank.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/watertank.png" alt="Water Tank"></span>
+        <span class="catnav-label">Water Tank</span>
+      </a>
+      <a href="../manhole.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/manhole.png" alt="Manhole Covers"></span>
+        <span class="catnav-label">Manhole Covers</span>
+      </a>
+      <a href="../chimmey.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/chimney.png" alt="Chimney &amp; Hobs"></span>
+        <span class="catnav-label">Chimney &amp; Hobs</span>
+      </a>
+      <a href="../door.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/doors.png" alt="Doors"></span>
+        <span class="catnav-label">Doors</span>
+      </a>
+      <a href="../bathtub.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/bathtub.png" alt="Bath Tub"></span>
+        <span class="catnav-label">Bath Tub</span>
+      </a>
+      <a href="../tile-accessories.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/tile-accessories.png" alt="Bath Tub"></span>
+        <span class="catnav-label">Tiles Accessories</span>
+      </a>
+      <a href="../waterproofing.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/water-proofing.png" alt="Bath Tub"></span>
+        <span class="catnav-label">Waterproofing</span>
+      </a>
+
+    </div>
+    <button class="catnav-arrow catnav-arrow-right" aria-label="Scroll right" onclick="btCatnavScroll(this,1)"><i
+        class="fas fa-chevron-right"></i></button>
+  </section>
+  <script>
+    function btCatnavScroll(btn, dir) {
+      var section = btn.closest('.bt-catnav');
+      var bar = section && section.querySelector('.catnav-bar');
+      if (!bar) return;
+      bar.scrollBy({ left: dir * 240, behavior: 'smooth' });
+    }
+  </script>
+
+  <script>
+    (function () {
+      var current = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+      document.querySelectorAll('.bt-catnav .catnav-item').forEach(function (item) {
+        var href = (item.getAttribute('href') || '').toLowerCase();
+        if (href === current) {
+          item.classList.add('catnav-active');
+        } else {
+          item.classList.remove('catnav-active');
+        }
+      });
+    })();
+  </script>
+
+  <!-- Floating Social Icons -->
+  <div class="bt-social-float bt-social-left">
+    <a href="https://wa.me/917500275005?text=Hi%2C%20I%27m%20interested%20in%20your%20products" target="_blank"
+      rel="noopener" class="bt-social-whatsapp" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  <div class="bt-social-float bt-social-right">
+    <a href="https://www.instagram.com/bharathiyatilespondicherry/" target="_blank" rel="noopener"
+      class="bt-social-instagram" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/bharathiyatiles/" target="_blank" rel="noopener" class="bt-social-facebook"
+      title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.justdial.com/Pondicherry/Bharathiya-Tiles-Opposite-Raja-Rajeshwari-Thirumana-Mandapam-Lawspet-Pondicherry/0413PX413-X413-131019120449-D1J7_BZDET"
+      target="_blank" rel="noopener" class="bt-social-justdial" title="Justdial">
+      <img src="../images/icons/jd.png" alt="Justdial">
+    </a>
+    <a href="https://www.indiamart.com/bharathiya-tiles-pondicherry/profile.html?srsltid=AfmBOooc_xpa9SiDgxruQojzZa9PrJ9lx3-OnhUPQs5O94nqLRVmVcNa"
+      target="_blank" rel="noopener" class="bt-social-justdial" title="India-mart">
+      <img src="../images/icons/india-mart.png" alt="Justdial">
+    </a>
+  </div>
+  <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("active");
+    }
+  </script>
+  <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("open");
+    }
+    var el_745347293942343209 = document.querySelector(".menu-toggle"); if (el_745347293942343209) el_745347293942343209.onclick = toggleMenu;
+  </script>
+  <!-- subtle extra interactive note (no extra elements, just behavior) -->
+</body>
+
+<!-- Mirrored from moonlit-druid-56b88f.netlify.app/rooftiles by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 10:16:13 GMT -->
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>living room · dark chrome + color</title>
+  <!-- font awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://api.fontshare.com/v2/css?f[]=archivo@300,400,600,700&amp;f[]=clash-display@400,600,700&amp;display=swap">
+
+
+  <!-- Footer CSS Dependencies -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="bg-wrap">
+    <div class="bg-gradient"></div>
+    <div class="bg-orbs">
+      <span class="bg-orb"></span>
+      <span class="bg-orb"></span>
+      <span class="bg-orb"></span>
+    </div>
+  </div>
+  <!-- NAVIGATION – dark + electric (same as kitchen) -->
+
+
+  <!-- HERO – adapted for living room -->
+  <section class="living-hero">
+    <div class="hero-pattern"></div>
+    <div class="hero-content">
+      <h1>Premium Elevation Collection</h1>
+      <p>Durable · Elegant · Weatherproof</p>
+    </div>
+  </section>
+
+  <!-- CARD SLIDER (voyage-style) with living room images & info -->
+  <section class="card-slider-section" aria-label="Featured living room tiles slider">
+    <div class="slider">
+      <button type="button" class="slider--btn slider--btn__prev" aria-label="Previous slide">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m15 18-6-6 6-6" />
+        </svg>
+      </button>
+      <div class="slides__wrapper">
+        <div class="slides">
+          <!-- extra preceding slides (hidden behind previous) -->
+          <div class="slide" data-previous>
+            <div class="slide__inner">
+              <div class="slide--image__wrapper">
+                <img class="slide--image" src="../images/tiles/elevation/living%20(11).jpg" alt="living concrete">
+              </div>
+            </div>
+          </div>
+          <div class="slide" data-previous>
+            <div class="slide__inner">
+              <div class="slide--image__wrapper">
+                <img class="slide--image" src="../images/tiles/elevation/living%20(13).jpg" alt="living wood">
+              </div>
+            </div>
+          </div>
+          <!-- current slide -->
+          <div class="slide" data-current>
+            <div class="slide__inner">
+              <div class="slide--image__wrapper">
+                <img class="slide--image" src="../images/tiles/elevation/living%20(17).jpg" alt="living wood">
+              </div>
+            </div>
+          </div>
+          <div class="slide__bg" style="--bg: url('../images/tiles/elevation/living%20(10.html).jpg')" data-current>
+          </div>
+          <!-- next slide -->
+          <div class="slide" data-next>
+            <div class="slide__inner">
+              <div class="slide--image__wrapper">
+                <img class="slide--image" src="../images/tiles/elevation/living%20(15).jpg" alt="Ember living tile">
+              </div>
+            </div>
+          </div>
+          <div class="slide__bg" style="--bg: url('../images/tiles/elevation/living%20(9.html).jpg')" data-next></div>
+          <!-- extra slides for richness -->
+          <div class="slide" data-previous>
+            <div class="slide__inner">
+              <div class="slide--image__wrapper">
+                <img class="slide--image" src="../images/tiles/elevation/living%20(5).jpg" alt="Teal living tile">
+              </div>
+            </div>
+          </div>
+          <div class="slide" data-previous>
+            <div class="slide__inner">
+              <div class="slide--image__wrapper">
+                <img class="slide--image" src="../images/tiles/elevation/living%20(6).jpg" alt="Sand living tile">
+              </div>
+            </div>
+          </div>
+          <div class="slide" data-previous>
+            <div class="slide__inner">
+              <div class="slide--image__wrapper">
+                <img class="slide--image" src="../images/tiles/elevation/living%20(7).jpg" alt="Slate living tile">
+              </div>
+            </div>
+          </div>
+          <div class="slide__bg" style="--bg: url('../images/tiles/elevation/living%20(8.html).jpg')" data-previous>
+          </div>
+        </div>
+        <div class="slides--infos">
+          <div class="slide-info" data-current>
+            <div class="slide-info__inner">
+              <div class="slide-info--text__wrapper">
+                <div data-title class="slide-info--text"><span>Prism</span></div>
+                <div data-subtitle class="slide-info--text"><span>Living Wall</span></div>
+                <div data-description class="slide-info--text"><span>Shadow & neon · lounge burst</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-info" data-next>
+            <div class="slide-info__inner">
+              <div class="slide-info--text__wrapper">
+                <div data-title class="slide-info--text"><span>Ember</span></div>
+                <div data-subtitle class="slide-info--text"><span>Living Wall</span></div>
+                <div data-description class="slide-info--text"><span>Warm tones for your lounge</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-info" data-previous>
+            <div class="slide-info__inner">
+              <div class="slide-info--text__wrapper">
+                <div data-title class="slide-info--text"><span>Concrete</span></div>
+                <div data-subtitle class="slide-info--text"><span>Loft style</span></div>
+                <div data-description class="slide-info--text"><span>Raw finish</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-info" data-previous>
+            <div class="slide-info__inner">
+              <div class="slide-info--text__wrapper">
+                <div data-title class="slide-info--text"><span>Timber</span></div>
+                <div data-subtitle class="slide-info--text"><span>Warm wood</span></div>
+                <div data-description class="slide-info--text"><span>Natural grain</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-info" data-previous>
+            <div class="slide-info__inner">
+              <div class="slide-info--text__wrapper">
+                <div data-title class="slide-info--text"><span>Slate</span></div>
+                <div data-subtitle class="slide-info--text"><span>Dark stone</span></div>
+                <div data-description class="slide-info--text"><span>Matte texture</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="slider--btn slider--btn__next" aria-label="Next slide">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m9 18 6-6-6-6" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- filter bar – dark iridescent -->
+
+  <div class="filter-bar">
+    <div class="filter-group">
+      <center>
+        <span class="filter-text active" data-filter="wall">
+          Elevation Tiles
+        </span>
+      </center>
+    </div>
+  </div>
+
+  <!-- TILE GALLERY – dark base, vibrant accents with living room tile images -->
+
+  <div class="tile-gallery">
+
+    <!-- FOOTER – deep dark + neon hints -->
+
+
+    <script>
+      // Filter buttons
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          const filter = this.dataset.filter;
+          document.querySelectorAll('.tile-card').forEach(tile => {
+            if (filter === tile.dataset.category) tile.style.display = "block";
+            else tile.style.display = "none";
+          });
+        });
+      });
+      // set initial filter = wall
+      document.querySelectorAll('.tile-card').forEach(tile => {
+        if (tile.dataset.category !== 'wall') tile.style.display = 'none';
+      });
+
+      // card click (except button)
+      document.querySelectorAll('.tile-card').forEach(card => {
+        card.addEventListener('click', (e) => {
+          if (e.target.tagName === 'BUTTON' || e.target.closest('button')) return;
+          alert('🌈 open vibrant dark living tile detail');
+        });
+      });
+
+      // Scroll reveal for tile cards
+      const initTileReveal = () => {
+        const cards = document.querySelectorAll('.tile-card');
+        if (!('IntersectionObserver' in window) || !cards.length) {
+          cards.forEach(card => card.classList.add('reveal-in'));
+          return;
+        }
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('reveal-in');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.2, rootMargin: '0px 0px -10% 0px' });
+        cards.forEach(card => observer.observe(card));
+      };
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initTileReveal);
+      } else {
+        initTileReveal();
+      }
+
+      // Nav shadow
+      const mainNav = document.querySelector('nav');
+      window.addEventListener('scroll', () => {
+        if (!mainNav) return;
+        mainNav.classList.toggle('nav-scrolled', window.scrollY > 10);
+      });
+
+      // Layout switcher
+      const layoutButtons = document.querySelectorAll('.layout-btn');
+      const gallery = document.querySelector('.tile-gallery');
+      const layoutClasses = ['layout-grid', 'layout-rows', 'layout-focus'];
+      const setLayout = (layout) => {
+        if (!gallery) return;
+        gallery.classList.remove(...layoutClasses);
+        gallery.classList.add(`layout-${layout}`);
+      };
+      layoutButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          layoutButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          setLayout(btn.dataset.layout);
+        });
+      });
+      setLayout('grid');
+
+      // card slider functionality (same as kitchen)
+      (function initSlider() {
+        const slides = document.querySelectorAll('.card-slider-section .slide');
+        const slidesInfo = document.querySelectorAll('.card-slider-section .slide-info');
+        const btnPrev = document.querySelector('.slider--btn__prev');
+        const btnNext = document.querySelector('.slider--btn__next');
+        const slider = document.querySelector('.card-slider-section .slider');
+
+        function change(direction) {
+          let current = { slide: document.querySelector('.card-slider-section .slide[data-current]'), slideInfo: document.querySelector('.card-slider-section .slide-info[data-current]'), slideBg: document.querySelector('.card-slider-section .slide__bg[data-current]') };
+          let prev = { slide: document.querySelector('.card-slider-section .slide[data-previous]'), slideInfo: document.querySelector('.card-slider-section .slide-info[data-previous]'), slideBg: document.querySelector('.card-slider-section .slide__bg[data-previous]') };
+          let next = { slide: document.querySelector('.card-slider-section .slide[data-next]'), slideInfo: document.querySelector('.card-slider-section .slide-info[data-next]'), slideBg: document.querySelector('.card-slider-section .slide__bg[data-next]') };
+          [current, prev, next].forEach(o => Object.values(o).forEach(el => { if (el) { el.removeAttribute('data-current'); el.removeAttribute('data-previous'); el.removeAttribute('data-next'); } }));
+          if (direction === 1) {
+            var t = current; current = next; next = prev; prev = t;
+          } else {
+            var t = current; current = prev; prev = next; next = t;
+          }
+          [current, prev, next].forEach((o, i) => { let attr = i === 0 ? 'data-current' : i === 1 ? 'data-previous' : 'data-next'; Object.values(o).forEach(el => { if (el) el.setAttribute(attr, ''); }); });
+        }
+
+        if (btnPrev) btnPrev.addEventListener('click', () => change(-1));
+        if (btnNext) btnNext.addEventListener('click', () => change(1));
+
+        // tilt effect
+        let rotCur = { x: 0, y: 0 }, rotTgt = { x: 0, y: 0 }, bgCur = { x: 0, y: 0 }, bgTgt = { x: 0, y: 0 };
+        const lerp = 0.08;
+        function tick() {
+          rotCur.x += (rotTgt.x - rotCur.x) * lerp;
+          rotCur.y += (rotTgt.y - rotCur.y) * lerp;
+          bgCur.x += (bgTgt.x - bgCur.x) * lerp;
+          bgCur.y += (bgTgt.y - bgCur.y) * lerp;
+          slides.forEach(slide => {
+            if (!slide.matches('[data-current]')) return;
+            let inner = slide.querySelector('.slide__inner');
+            let infoInner = document.querySelector('.slide-info[data-current] .slide-info__inner');
+            if (inner) {
+              inner.style.setProperty('--rotX', rotCur.y.toFixed(2) + 'deg');
+              inner.style.setProperty('--rotY', rotCur.x.toFixed(2) + 'deg');
+              inner.style.setProperty('--bgPosX', bgCur.x.toFixed(2) + '%');
+              inner.style.setProperty('--bgPosY', bgCur.y.toFixed(2) + '%');
+            }
+            if (infoInner) {
+              infoInner.style.setProperty('--rotX', rotCur.y.toFixed(2) + 'deg');
+              infoInner.style.setProperty('--rotY', rotCur.x.toFixed(2) + 'deg');
+            }
+          });
+          requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+        function onMove(e) {
+          let rect = slider.getBoundingClientRect();
+          let cx = rect.left + rect.width / 2, cy = rect.top + rect.height / 2;
+          rotTgt.x = (e.clientX - cx) / (Math.PI * 3);
+          rotTgt.y = -(e.clientY - cy) / (Math.PI * 4);
+          bgTgt.x = -rotTgt.x * 0.3;
+          bgTgt.y = rotTgt.y * 0.3;
+        }
+        if (slider) {
+          slider.addEventListener('mousemove', onMove);
+          slider.addEventListener('mouseleave', () => { rotTgt.x = rotTgt.y = bgTgt.x = bgTgt.y = 0; });
+        }
+      })();
+    </script>
+    <script>
+      document.write(
+        Array.from({ length: 9 }, (_, i) => `
+    <div class="tile-card" style="--i:${i + 1}">
+        <div class="tile-img">
+            <img src="../images/rooftiles/${i + 2}.png" alt="roof tile ${i + 2}">
+            <div class="tile-badge"><i class="fas fa-crown"></i> </div>
+        </div>
+        <div class="tile-info">
+            <button class="btn-add" onclick="window.open('https://api.whatsapp.com/send/?phone=917500275005&amp;text=Hi+I+am+interested+in+roof+tile+${i + 2}&amp;type=phone_number&amp;app_absent=0','_blank')">
+                <i class="fab fa-whatsapp"></i> Book Now
+            </button>
+        </div>
+    </div>
+    `).join('')
+      );
+
+
+
+    </script>
+  </div>
+
+
+
+  <!-- Main Footer -->
+  <footer class="main-footer footer-style-one">
+    <!-- Widgets Section -->
+    <div class="widgets-section">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Column 1: Logo -->
+          <div class="footer-column col-lg-3 col-sm-6 wow fadeInLeft" data-wow-delay="400ms">
+            <div class="footer-widget contact-widget">
+              <div class="logo-box">
+                <img src="../images/bt_logo.png">
+              </div>
+            </div>
+            <div class="footer-widget about-widget">
+              <h4 class="widget-title">Follow Us</h4>
+              <ul class="social-icons">
+                <li><a href="https://www.facebook.com/bharathiyatiles/" target="_blank" rel="noopener"><i
+                      class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/bharathiyatilespondicherry/" target="_blank" rel="noopener"><i
+                      class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Footer Column 2: Contact Details -->
+          <div class="footer-column col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="600ms">
+            <div class="footer-widget contact-widget">
+              <div class="widget-content">
+                <div class="content-box">
+                  <div class="icon-box">
+                    <i class="flaticon-envelope"></i>
+                  </div>
+                  <span>Mail us</span>
+                  <h6 class="title">support@bttiles.com</h6>
+                </div>
+                <div class="content-box">
+                  <div class="icon-box">
+                    <i class="flaticon-clock-3"></i>
+                  </div>
+                  <span>Open Time</span>
+                  <h6 class="title">09:45 AM - 08:00 PM (Mon - Sat)<br>09:45 AM - 02:00 PM (Sunday)</h6>
+                </div>
+                <div class="content-box">
+                  <div class="icon-box">
+                    <i class="flaticon-phone-call"></i>
+                  </div>
+                  <span>Call</span>
+                  <h6 class="title">7500275005</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Column 3: Quick Links -->
+          <div class="footer-column col-lg-2 col-sm-6 wow fadeInLeft" data-wow-delay="800ms">
+            <div class="footer-widget links-widge">
+              <h4 class="widget-title">Quick Links</h4>
+              <div class="widget-content">
+                <ul class="user-links style-two">
+                  <li><a href='../index.html'>Home</a></li>
+                  <li><a href='../about.html'>About</a></li>
+                  <li><a href="../contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Column 4: Follow Us -->
+          <div class="footer-column col-lg-3 col-sm-6 wow fadeInLeft" data-wow-delay="1000ms">
+            <div class="footer-widget links-widge">
+              <h4 class="widget-title">Our Products</h4>
+              <div class="widget-content">
+                <ul class="user-links style-two">
+                  <li><a href='../index.html'>Tiles</a></li>
+                  <li><a href='../watertank.html'>Water Tank</a></li>
+                  <li><a href='../door.html'>PVC & Wooden Door</a></li>
+                  <li><a href="all-tiles.html">Tiles Accessories</a></li>
+                  <li><a href="../page-contact.html">Sanitary Wares</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="inner-container text-center">
+          <div class="copyright-text">© 2026 Bharathiya Tiles. All rights reserved.</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-to-top scroll-to-target arrow-btn" data-target="html">
+      <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </div>
+  </footer>
+  <!--End Main Footer -->
+
+
+  <link rel="stylesheet" href="../css/responsive-fixes.css">
+</body>
+
+</html>

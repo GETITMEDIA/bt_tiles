@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from moonlit-druid-56b88f.netlify.app/kitchentiles by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 10:15:59 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitchen Wall Tiles - Bharathiya Tiles</title>
+  <link rel="icon" type="image/x-icon" href="images/fav.png">
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&amp;family=Bebas+Neue&amp;family=DM+Sans:wght@300;400;500&amp;display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #c49b3f;
+      --gold-light: #f5d742;
+      --cream: #f5f0e8;
+      --dark: #0d0d0d;
+      --dark2: #141414;
+      --dark3: #1e1e1e;
+      --mid: #2a2a2a;
+      --text: #e8e0d0;
+      --muted: #888;
+      --accent: #ff6600;
+      --transition: cubic-bezier(0.76, 0, 0.24, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--dark);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* ─── CURSOR ─── */
+    .cursor {
+      position: fixed;
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transition: transform 0.1s;
+      mix-blend-mode: difference;
+    }
+
+    .cursor-ring {
+      position: fixed;
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(196, 155, 63, 0.6);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9998;
+      transition: transform 0.18s var(--transition), width 0.3s, height 0.3s, border-color 0.3s;
+    }
+
+    body:has(.tile-card:hover) .cursor-ring {
+      width: 60px;
+      height: 60px;
+      border-color: var(--gold);
+    }
+
+    /* ─── NAV ─── */
+    .top-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      background: rgba(13, 13, 13, 0.92);
+      backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(196, 155, 63, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.8rem 2.5rem;
+      transition: padding 0.4s var(--transition);
+    }
+
+    .top-navbar.scrolled {
+      padding: 0.5rem 2.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo img {
+      height: 44px;
+      object-fit: contain;
+    }
+
+    .logo-text h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.55rem;
+      letter-spacing: 0.12em;
+      background: linear-gradient(135deg, #fff 30%, var(--gold-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .logo-text span {
+      font-size: 0.65rem;
+      color: var(--muted);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-left: 2px solid var(--gold);
+      padding-left: 8px;
+      display: block;
+      margin-top: 2px;
+    }
+
+    .nav-center {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .nav-center a {
+      color: rgba(232, 224, 208, 0.7);
+      text-decoration: none;
+      font-size: 0.82rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    .nav-center a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--gold);
+      transition: width 0.4s var(--transition);
+    }
+
+    .nav-center a:hover {
+      color: var(--gold-light);
+    }
+
+    .nav-center a:hover::after {
+      width: 100%;
+    }
+
+    .phone {
+      font-size: 0.82rem;
+      background: rgba(196, 155, 63, 0.1);
+      border: 1px solid rgba(196, 155, 63, 0.25);
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--gold-light);
+    }
+
+    .contact-btn {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--dark);
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      border: none;
+      padding: 0.55rem 1.4rem;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.3s var(--transition), box-shadow 0.3s;
+    }
+
+    .contact-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(196, 155, 63, 0.4);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid rgba(196, 155, 63, 0.3);
+      color: var(--gold-light);
+      font-size: 1.1rem;
+      padding: 0.45rem 0.7rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* ─── SIDE MENU ─── */
+    .side-menu {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 300px;
+      height: 100%;
+      background: var(--dark2);
+      border-right: 1px solid rgba(196, 155, 63, 0.2);
+      padding: 1.5rem;
+      z-index: 999;
+      transition: left 0.5s var(--transition);
+      overflow-y: auto;
+    }
+
+    .side-menu.open {
+      left: 0;
+    }
+
+    .close-btn {
+      text-align: right;
+      font-size: 1.3rem;
+      color: var(--gold-light);
+      cursor: pointer;
+      margin-bottom: 2rem;
+    }
+
+    .mobile-categories {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .mobile-categories a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0.75rem;
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid transparent;
+      transition: all 0.3s;
+    }
+
+    .mobile-categories a:hover {
+      background: rgba(196, 155, 63, 0.08);
+      border-color: rgba(196, 155, 63, 0.2);
+    }
+
+    .mobile-categories img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(196, 155, 63, 0.4);
+    }
+
+    .mobile-categories p {
+      font-size: 0.85rem;
+    }
+
+    /* ─── CATEGORY BAR ─── */
+    .category-bar {
+      background: rgba(20, 20, 20, 0.98);
+      border-bottom: 1px solid rgba(196, 155, 63, 0.15);
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 1.5rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+      margin-top: 70px;
+    }
+
+    .category-bar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .category-link {
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .category {
+      text-align: center;
+      position: relative;
+      min-width: 80px;
+    }
+
+    .category img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(196, 155, 63, 0.25);
+      display: block;
+      margin: 0 auto 6px;
+      transition: border-color 0.3s, transform 0.3s var(--transition);
+    }
+
+    .category:hover img {
+      border-color: var(--gold);
+      transform: scale(1.08);
+    }
+
+    .category p {
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: color 0.3s;
+    }
+
+    .category:hover p {
+      color: var(--gold-light);
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      background: var(--dark2);
+      border: 1px solid rgba(196, 155, 63, 0.3);
+      border-radius: 10px;
+      padding: 8px 0;
+      min-width: 170px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s var(--transition);
+      z-index: 100;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 8px 18px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: all 0.25s;
+    }
+
+    .dropdown-menu a:hover {
+      background: rgba(196, 155, 63, 0.1);
+      color: var(--gold-light);
+      padding-left: 24px;
+    }
+
+    /* ─── HERO ─── */
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      min-height: 600px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom,
+          rgba(0, 0, 0, 0.3) 0%,
+          rgba(0, 0, 0, 0.5) 50%,
+          rgba(13, 13, 13, 0.95) 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.75rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.9s 0.3s var(--transition) forwards;
+    }
+
+    .hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(5rem, 14vw, 13rem);
+      letter-spacing: 0.04em;
+      line-height: 0.9;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+      position: relative;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 1s 0.5s var(--transition) forwards;
+    }
+
+    .hero-title .fill {
+      display: block;
+      -webkit-text-stroke: 0;
+      background: linear-gradient(135deg, #fff 20%, var(--gold-light) 60%, var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-title .stroke {
+      display: block;
+    }
+
+    .hero-sub {
+      margin-top: 1.5rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: rgba(232, 224, 208, 0.5);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.9s 0.8s var(--transition) forwards;
+    }
+
+    .hero-scroll-hint {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      opacity: 0;
+      animation: fadeUp 0.9s 1.2s forwards;
+    }
+
+    .hero-scroll-hint span {
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .scroll-line {
+      width: 1px;
+      height: 50px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      animation: scrollPulse 1.8s ease-in-out infinite;
+    }
+
+    @keyframes scrollPulse {
+
+      0%,
+      100% {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+
+      50% {
+        transform: scaleY(0.5);
+        opacity: 0.4;
+      }
+    }
+
+    /* ─── MARQUEE ─── */
+    .marquee-wrap {
+      overflow: hidden;
+      padding: 1rem 0;
+      border-top: 1px solid rgba(196, 155, 63, 0.1);
+      border-bottom: 1px solid rgba(196, 155, 63, 0.1);
+      background: var(--dark2);
+    }
+
+    .marquee-track {
+      display: flex;
+      gap: 3rem;
+      width: max-content;
+      animation: marquee 18s linear infinite;
+    }
+
+    .marquee-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.2em;
+      color: rgba(196, 155, 63, 0.4);
+      white-space: nowrap;
+    }
+
+    .marquee-item .dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--gold);
+      opacity: 0.5;
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* ─── SLIDER ─── */
+    .slider-section {
+      padding: 5rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slider-section::before {
+      content: 'FEATURED';
+      position: absolute;
+      top: 3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(4rem, 10vw, 8rem);
+      letter-spacing: 0.2em;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(196, 155, 63, 0.06);
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    .slider-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      position: relative;
+    }
+
+    .slider-viewport {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 520px;
+      position: relative;
+      perspective: 1200px;
+    }
+
+    .slide-item {
+      position: absolute;
+      width: 260px;
+      transition: all 0.7s var(--transition);
+      cursor: pointer;
+    }
+
+    .slide-item.pos-center {
+      z-index: 10;
+      transform: translateX(0) scale(1.15) rotateY(0deg);
+      filter: brightness(1);
+    }
+
+    .slide-item.pos-left {
+      z-index: 5;
+      transform: translateX(-280px) scale(0.82) rotateY(18deg);
+      filter: brightness(0.4);
+    }
+
+    .slide-item.pos-right {
+      z-index: 5;
+      transform: translateX(280px) scale(0.82) rotateY(-18deg);
+      filter: brightness(0.4);
+    }
+
+    .slide-item.pos-hidden-left {
+      z-index: 1;
+      transform: translateX(-480px) scale(0.65) rotateY(30deg);
+      filter: brightness(0.15);
+      opacity: 0;
+    }
+
+    .slide-item.pos-hidden-right {
+      z-index: 1;
+      transform: translateX(480px) scale(0.65) rotateY(-30deg);
+      filter: brightness(0.15);
+      opacity: 0;
+    }
+
+    .slide-img-wrap {
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 2/3;
+      border: 1px solid rgba(196, 155, 63, 0.2);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8);
+      position: relative;
+    }
+
+    .slide-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s var(--transition);
+    }
+
+    .slide-item.pos-center .slide-img-wrap img {
+      transform: scale(1.05);
+    }
+
+    .slide-info-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 2rem 1.5rem 1.5rem;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+      transform: translateY(100%);
+      transition: transform 0.5s var(--transition);
+      border-radius: 0 0 16px 16px;
+    }
+
+    .slide-item.pos-center .slide-info-overlay {
+      transform: translateY(0);
+    }
+
+    .slide-info-overlay h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 0.15em;
+      color: #fff;
+    }
+
+    .slide-info-overlay p {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-top: 4px;
+    }
+
+    .slider-btn {
+      background: none;
+      border: 1px solid rgba(196, 155, 63, 0.3);
+      color: var(--gold-light);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.3s var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      z-index: 20;
+    }
+
+    .slider-btn:hover {
+      background: var(--gold);
+      color: var(--dark);
+      border-color: var(--gold);
+      transform: scale(1.08);
+    }
+
+    /* ─── FILTER ─── */
+    .filter-section {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      padding: 2rem 1rem 3rem;
+      position: relative;
+    }
+
+    .filter-section::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+
+    .filter-btn {
+      padding: 0.85rem 2.5rem;
+      border: 1px solid rgba(196, 155, 63, 0.2);
+      background: transparent;
+      color: var(--muted);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.4s var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .filter-btn:first-child {
+      border-radius: 4px 0 0 4px;
+    }
+
+    .filter-btn:last-child {
+      border-radius: 0 4px 4px 0;
+    }
+
+    .filter-btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+
+    .filter-btn.active {
+      color: var(--dark);
+      border-color: var(--gold);
+    }
+
+    .filter-btn.active::before {
+      opacity: 1;
+    }
+
+    .filter-btn span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .filter-btn:hover:not(.active) {
+      color: var(--gold-light);
+      border-color: rgba(196, 155, 63, 0.4);
+    }
+
+    /* ─── GALLERY ─── */
+    .gallery-section {
+      padding: 0 2.5rem 6rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .gallery-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(196, 155, 63, 0.1);
+    }
+
+    .gallery-header h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      font-weight: 300;
+      color: var(--cream);
+      letter-spacing: 0.05em;
+    }
+
+    .gallery-header h2 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .count-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .tile-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 1100px) {
+      .tile-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .tile-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .tile-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .tile-card {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--dark3);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: border-color 0.4s, box-shadow 0.5s var(--transition);
+    }
+
+    .tile-card.reveal {
+      animation: cardReveal 0.8s var(--transition) forwards;
+      animation-delay: calc(var(--delay, 0) * 1ms);
+    }
+
+    @keyframes cardReveal {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .tile-card:hover {
+      border-color: rgba(196, 155, 63, 0.35);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(196, 155, 63, 0.15);
+    }
+
+    .tile-img {
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .tile-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s var(--transition);
+      display: block;
+    }
+
+    .tile-card:hover .tile-img img {
+      transform: scale(1.1);
+    }
+
+    /* shimmer overlay on hover */
+    .tile-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, transparent 30%, rgba(196, 155, 63, 0.08) 50%, transparent 70%);
+      background-size: 300% 300%;
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+
+    .tile-card:hover .tile-img::after {
+      opacity: 1;
+      animation: shimmer 1.2s var(--transition);
+    }
+
+    @keyframes shimmer {
+      from {
+        background-position: 0% 0%;
+      }
+
+      to {
+        background-position: 100% 100%;
+      }
+    }
+
+    .tile-footer {
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .tile-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      color: rgba(196, 155, 63, 0.4);
+      flex-shrink: 0;
+    }
+
+    .btn-book {
+      flex: 1;
+      padding: 0.65rem 1rem;
+      border: none;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      color: var(--dark);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: transform 0.3s var(--transition), box-shadow 0.3s, filter 0.3s;
+    }
+
+    .btn-book:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(196, 155, 63, 0.4);
+      filter: brightness(1.08);
+    }
+
+    .btn-book i {
+      font-size: 0.9rem;
+      color: #25d366;
+    }
+
+    /* hidden tile-badge from original */
+    .tile-badge {
+      display: none;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #0a0a0a;
+      border-top: 1px solid rgba(196, 155, 63, 0.15);
+      padding: 5rem 2.5rem 2rem;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3rem;
+    }
+
+    @media (max-width: 900px) {
+      .footer-inner {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-col h4 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 0.25em;
+      color: var(--gold-light);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-col h4::before {
+      content: '';
+      width: 20px;
+      height: 1px;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .footer-col a,
+    .footer-col p {
+      display: block;
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.8;
+      text-decoration: none;
+      transition: color 0.25s;
+    }
+
+    .footer-col a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 1rem;
+    }
+
+    .footer-contact-item .ic {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      background: rgba(196, 155, 63, 0.1);
+      border: 1px solid rgba(196, 155, 63, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+
+    .footer-contact-item div small {
+      display: block;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+
+    .footer-contact-item div strong {
+      font-size: 0.85rem;
+      color: var(--text);
+      font-weight: 400;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 0.6rem;
+      margin-top: 1.5rem;
+    }
+
+    .social-links a {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted) !important;
+      font-size: 0.85rem;
+      transition: all 0.3s !important;
+    }
+
+    .social-links a:hover {
+      background: rgba(196, 155, 63, 0.15) !important;
+      border-color: rgba(196, 155, 63, 0.3) !important;
+      color: var(--gold-light) !important;
+      transform: translateY(-2px);
+    }
+
+    .newsletter-form {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .newsletter-form input {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text);
+      padding: 0.65rem 1rem;
+      border-radius: 4px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .newsletter-form input:focus {
+      border-color: rgba(196, 155, 63, 0.4);
+    }
+
+    .newsletter-form input::placeholder {
+      color: var(--muted);
+    }
+
+    .newsletter-form button {
+      padding: 0.65rem;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      border: none;
+      color: var(--dark);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .newsletter-form button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(196, 155, 63, 0.3);
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 3rem auto 0;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-bottom p {
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+    }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ─── MOBILE ─── */
+    @media (max-width: 768px) {
+
+      .nav-center,
+      .contact-btn {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .top-navbar {
+        padding: 0.7rem 1.2rem;
+      }
+
+      .category-bar {
+        margin-top: 62px;
+      }
+
+      .hero-section {
+        height: 85vh;
+      }
+
+      .slider-section {
+        padding: 3rem 1rem;
+      }
+
+      .slider-viewport {
+        min-height: 380px;
+      }
+
+      .slide-item {
+        width: 180px;
+      }
+
+      .slide-item.pos-left {
+        transform: translateX(-200px) scale(0.82) rotateY(18deg);
+      }
+
+      .slide-item.pos-right {
+        transform: translateX(200px) scale(0.82) rotateY(-18deg);
+      }
+
+      .gallery-section {
+        padding: 0 1rem 4rem;
+      }
+
+      .filter-btn {
+        padding: 0.75rem 1.3rem;
+        font-size: 0.7rem;
+      }
+    }
+
+    /* ─── PAGE LOAD BAR ─── */
+    .load-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      z-index: 9999;
+      transition: width 0.6s var(--transition), opacity 0.5s;
+    }
+
+    .load-bar.done {
+      width: 100%;
+      opacity: 0;
+    }
+  </style>
+  <link rel="stylesheet" href="css/bharathiya-header.css">
+
+  <!-- Footer CSS Dependencies -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="load-bar" id="loadBar"></div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <header class="top-navbar"
+    style="display:flex;align-items:center;justify-content:space-between;padding:8px 30px;margin:0;background:#0f2434;color:#fff;font-family:Arial, sans-serif;">
+
+    <!-- Logo -->
+    <div class="logo" style="display:flex;align-items:center;gap:10px;margin:0;">
+      <img src="images/bt_logo.png" alt="Bharathiya Tiles Logo" style="width:55px;height:auto;display:block;">
+
+      <div class="logo-text" style="line-height:1.2;">
+        <h2 style="margin:0;font-size:22px;font-weight:600;color:#fff;">Bharathiya Tiles</h2>
+        <span style="font-size:13px;color:#cfd8dc;">Ensuring The Best For you</span>
+      </div>
+    </div>
+
+    <!-- Center Menu -->
+    <div class="nav-center" style="display:flex;align-items:center;gap:30px;margin:0;">
+      <a href="#" style="text-decoration:none;color:#fff;font-size:15px;font-weight:500;"></a>
+
+      <a href="#" style="text-decoration:none;color:#fff;font-size:15px;font-weight:500;">Store Locator</a>
+
+      <span class="phone"
+        style="background:#2e3d2e;padding:8px 18px;border-radius:25px;font-size:14px;display:flex;align-items:center;gap:6px;">
+        <i class="fa fa-phone"></i> +91-8595747233
+      </span>
+    </div>
+
+    <!-- Right Section -->
+    <div class="nav-right" style="display:flex;align-items:center;gap:15px;margin:0;">
+      <i class="fa fa-bars" style="font-size:20px;color:#fff;cursor:pointer;" onclick="toggleMenu()"></i>
+    </div>
+
+  </header>
+
+  <!-- Side Menu -->
+  <div class="side-menu" id="sideMenu">
+    <div class="close-btn" onclick="toggleMenu()">
+      <i class="fa fa-times"></i>
+    </div>
+    <div class="mobile-categories">
+
+      <a class='category' href='index.html'>
+        <img src="images/nav/house.png">
+        <p>Home</p>
+      </a>
+
+      <a class='category' href='all-tiles.html'>
+        <img src="images/nav/tiless.jpg">
+        <p>Tiles</p>
+      </a>
+
+      <a class='category' href='paints.html'>
+        <img src="images/paints/OIP.webp">
+        <p>Paints</p>
+      </a>
+
+      <a class='category' href='sanitary.html'>
+        <img src="images/nav/sanitary.jpg">
+        <p>Sanitarywares</p>
+      </a>
+
+      <a class='category' href='fiting.html'>
+        <img src="images/nav/cpfit.jpg">
+        <p>CP Fit</p>
+      </a>
+
+      <a class='category' href='sink.html'>
+        <img src="images/nav/sink.jpg">
+        <p>Kitchen Sinks</p>
+      </a>
+
+      <a class='category' href='watertank.html'>
+        <img src="images/tank.webp">
+        <p>Water Tank</p>
+      </a>
+
+      <a href="#" class="category">
+        <img src="images/nav/wallcladding.jpg">
+        <p>Wall Cladding</p>
+      </a>
+
+      <a class='category' href='manhole.html'>
+        <img src="images/nav/man1.jpg">
+        <p>Manhole Covers</p>
+      </a>
+
+      <a class='category' href='chimmey.html'>
+        <img src="images/nav/chimney.jpg">
+        <p>Chimney & Hobs</p>
+      </a>
+
+      <a class='category' href='door.html'>
+        <img src="images/nav/door.png">
+        <p>Doors</p>
+      </a>
+
+      <a class='category' href='bathtub.html'>
+        <img src="images/nav/bathh.png">
+        <p>Bath Tub</p>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- New Category Navbar -->
+  <section class="bt-catnav">
+    <button class="catnav-arrow catnav-arrow-left" aria-label="Scroll left" onclick="btCatnavScroll(this,-1)"><i
+        class="fas fa-chevron-left"></i></button>
+    <div class="catnav-bar">
+      <a href="index.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/home.png" alt="Home"></span>
+        <span class="catnav-label">Home</span>
+      </a>
+      <a href="all-tiles.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/tiles.png" alt="Tiles"></span>
+        <span class="catnav-label">Tiles</span>
+      </a>
+      <a href="paints.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/paints.png" alt="Paints"></span>
+        <span class="catnav-label">Paints</span>
+      </a>
+      <a href="sanitary.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/sanitary.png" alt="Sanitarywares"></span>
+        <span class="catnav-label">Sanitarywares</span>
+      </a>
+      <a href="fiting.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/cpfit.png" alt="CPI Fittings"></span>
+        <span class="catnav-label">CPI Fittings</span>
+      </a>
+      <a href="sink.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/kitchensink.png" alt="Kitchen Sinks"></span>
+        <span class="catnav-label">Kitchen Sinks</span>
+      </a>
+      <a href="watertank.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/watertank.png" alt="Water Tank"></span>
+        <span class="catnav-label">Water Tank</span>
+      </a>
+      <a href="manhole.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/manhole.png" alt="Manhole Covers"></span>
+        <span class="catnav-label">Manhole Covers</span>
+      </a>
+      <a href="chimmey.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/chimney.png" alt="Chimney &amp; Hobs"></span>
+        <span class="catnav-label">Chimney &amp; Hobs</span>
+      </a>
+      <a href="door.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/doors.png" alt="Doors"></span>
+        <span class="catnav-label">Doors</span>
+      </a>
+      <a href="bathtub.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/bathtub.png" alt="Bath Tub"></span>
+        <span class="catnav-label">Bath Tub</span>
+      </a>
+      <a href="tile-accessories.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/tile-accessories.png" alt="Bath Tub"></span>
+        <span class="catnav-label">Tiles Accessories</span>
+      </a>
+      <a href="waterproofing.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/water-proofing.png" alt="Bath Tub"></span>
+        <span class="catnav-label">Waterproofing</span>
+      </a>
+    </div>
+    <button class="catnav-arrow catnav-arrow-right" aria-label="Scroll right" onclick="btCatnavScroll(this,1)"><i
+        class="fas fa-chevron-right"></i></button>
+  </section>
+  <script>
+    function btCatnavScroll(btn, dir) {
+      var section = btn.closest('.bt-catnav');
+      var bar = section && section.querySelector('.catnav-bar');
+      if (!bar) return;
+      bar.scrollBy({ left: dir * 240, behavior: 'smooth' });
+    }
+  </script>
+  <script>
+    (function () {
+      var current = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+      document.querySelectorAll('.bt-catnav .catnav-item').forEach(function (item) {
+        var href = (item.getAttribute('href') || '').toLowerCase();
+        if (href === current) {
+          item.classList.add('catnav-active');
+        } else {
+          item.classList.remove('catnav-active');
+        }
+      });
+    })();
+  </script>
+  <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("active");
+    }
+  </script>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="images/tiles/1.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Bharathiya Tiles · Collection</p>
+      <h1 class="hero-title">
+        <span class="stroke">Kitchen</span>
+        <span class="fill">Tiles</span>
+      </h1>
+      <p class="hero-sub">Wall · Floor · Premium Selection</p>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track" id="marqueeTrack">
+      <div class="marquee-item"><span>Kitchen Wall Tiles</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Floor Tiles</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Premium Ceramic</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Bharathiya Tiles</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Since 2003</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>20+ Years Experience</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Kitchen Wall Tiles</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Floor Tiles</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Premium Ceramic</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Bharathiya Tiles</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Since 2003</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>20+ Years Experience</span><span class="dot"></span></div>
+    </div>
+  </div>
+
+  <!-- SLIDER -->
+  <section class="slider-section">
+    <div class="slider-container">
+      <button class="slider-btn" id="btnPrev" aria-label="Previous">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="slider-viewport" id="sliderViewport">
+        <!-- Slides injected by JS -->
+      </div>
+      <button class="slider-btn" id="btnNext" aria-label="Next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- FILTER -->
+  <div class="filter-section">
+    <button class="filter-btn active" data-filter="all"><span>Kitchen Wall Tiles</span></button>
+    <button class="filter-btn" data-filter="floor"><span>Kitchen Floor Tiles</span></button>
+  </div>
+
+  <!-- GALLERY -->
+  <section class="gallery-section">
+    <div class="gallery-header">
+      <h2>Our <em>Collection</em></h2>
+      <span class="count-label" id="countLabel">24 designs</span>
+    </div>
+    <div class="tile-grid" id="tileGrid">
+      <!-- cards injected by JS -->
+    </div>
+  </section>
+
+
+
+
+  <!-- Main Footer -->
+  <footer class="main-footer footer-style-one">
+    <!-- Widgets Section -->
+    <div class="widgets-section">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Column 1: Logo -->
+          <div class="footer-column col-lg-3 col-sm-6 wow fadeInLeft" data-wow-delay="400ms">
+            <div class="footer-widget contact-widget">
+              <div class="logo-box">
+                <img src="images/bt_logo.png">
+              </div>
+            </div>
+            <div class="footer-widget about-widget">
+              <h4 class="widget-title">Follow Us</h4>
+              <ul class="social-icons">
+                <li><a href="https://www.facebook.com/bharathiyatiles/" target="_blank" rel="noopener"><i
+                      class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/bharathiyatilespondicherry/" target="_blank" rel="noopener"><i
+                      class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Footer Column 2: Contact Details -->
+          <div class="footer-column col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="600ms">
+            <div class="footer-widget contact-widget">
+              <div class="widget-content">
+                <div class="content-box">
+                  <div class="icon-box">
+                    <i class="flaticon-envelope"></i>
+                  </div>
+                  <span>Mail us</span>
+                  <h6 class="title">support@bttiles.com</h6>
+                </div>
+                <div class="content-box">
+                  <div class="icon-box">
+                    <i class="flaticon-clock-3"></i>
+                  </div>
+                  <span>Open Time</span>
+                  <h6 class="title">09:45 AM - 08:00 PM (Mon - Sat)<br>09:45 AM - 02:00 PM (Sunday)</h6>
+                </div>
+                <div class="content-box">
+                  <div class="icon-box">
+                    <i class="flaticon-phone-call"></i>
+                  </div>
+                  <span>Call</span>
+                  <h6 class="title">7500275005</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Column 3: Quick Links -->
+          <div class="footer-column col-lg-2 col-sm-6 wow fadeInLeft" data-wow-delay="800ms">
+            <div class="footer-widget links-widge">
+              <h4 class="widget-title">Quick Links</h4>
+              <div class="widget-content">
+                <ul class="user-links style-two">
+                  <li><a href='index.html'>Home</a></li>
+                  <li><a href='about.html'>About</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Column 4: Follow Us -->
+          <div class="footer-column col-lg-3 col-sm-6 wow fadeInLeft" data-wow-delay="1000ms">
+            <div class="footer-widget links-widge">
+              <h4 class="widget-title">Our Products</h4>
+              <div class="widget-content">
+                <ul class="user-links style-two">
+                  <li><a href='index.html'>Tiles</a></li>
+                  <li><a href='watertank.html'>Water Tank</a></li>
+                  <li><a href='door.html'>PVC & Wooden Door</a></li>
+                  <li><a href="all-tiles.html">Tiles Accessories</a></li>
+                  <li><a href="page-contact.html">Sanitary Wares</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="inner-container text-center">
+          <div class="copyright-text">© 2026 Bharathiya Tiles. All rights reserved.</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-to-top scroll-to-target arrow-btn" data-target="html">
+      <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </div>
+  </footer>
+  <!--End Main Footer -->
+
+
+  <script>
+    // ─── CURSOR ───
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx + 'px'; cursor.style.top = my + 'px'; });
+    (function ringLoop() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      ring.style.left = (rx - 18) + 'px';
+      ring.style.top = (ry - 18) + 'px';
+      requestAnimationFrame(ringLoop);
+    })();
+
+    // ─── LOAD BAR ───
+    const lb = document.getElementById('loadBar');
+    lb.style.width = '0%';
+    setTimeout(() => { lb.style.width = '70%'; }, 100);
+    window.addEventListener('load', () => {
+      lb.style.width = '100%';
+      setTimeout(() => lb.classList.add('done'), 400);
+    });
+
+    // ─── NAV SCROLL ───
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // ─── SIDE MENU ───
+    function toggleMenu() {
+      document.getElementById('sideMenu').classList.toggle('open');
+    }
+
+    // ─── SLIDER DATA ───
+    const sliderImages = [
+      { src: 'images/tiles/kitchen/kitchen (1).jpg', title: 'Prism', sub: 'Kitchen Wall' },
+      { src: 'images/tiles/kitchen/kitchen (2).jpg', title: 'Ember', sub: 'Kitchen Wall' },
+      { src: 'images/tiles/kitchen/kitchen (3).jfif', title: 'Teal', sub: 'Kitchen Wall' },
+      { src: 'images/tiles/kitchen/kitchen (4).jpg', title: 'Fuchsia', sub: 'Kitchen Wall' },
+      { src: 'images/tiles/kitchen/kitchen (5).jpg', title: 'Gold', sub: 'Kitchen Wall' },
+      { src: 'images/tiles/kitchen/kitchen (6).jpg', title: 'Onyx', sub: 'Kitchen Wall' },
+      { src: 'images/tiles/kitchen/kitchen (7).jpg', title: 'Lava', sub: 'Kitchen Wall' },
+      { src: 'images/tiles/kitchen/kitchen (8).jpg', title: 'Amber', sub: 'Kitchen Wall' },
+    ];
+
+    const viewport = document.getElementById('sliderViewport');
+    let current = 0;
+    const N = sliderImages.length;
+
+    function getPos(idx) {
+      const diff = (idx - current + N) % N;
+      if (diff === 0) return 'pos-center';
+      if (diff === 1) return 'pos-right';
+      if (diff === N - 1) return 'pos-left';
+      if (diff <= N / 2) return 'pos-hidden-right';
+      return 'pos-hidden-left';
+    }
+
+    function buildSlider() {
+      viewport.innerHTML = '';
+      sliderImages.forEach((item, i) => {
+        const el = document.createElement('div');
+        el.className = 'slide-item ' + getPos(i);
+        el.dataset.idx = i;
+        el.innerHTML = `
+      <div class="slide-img-wrap">
+        <img src="${item.src}" alt="${item.title}" loading="lazy">
+        <div class="slide-info-overlay">
+          <h3>${item.title}</h3>
+          <p>${item.sub}</p>
+        </div>
+      </div>`;
+        viewport.appendChild(el);
+      });
+    }
+    buildSlider();
+
+    function updateSlider() {
+      viewport.querySelectorAll('.slide-item').forEach(el => {
+        el.className = 'slide-item ' + getPos(parseInt(el.dataset.idx));
+      });
+    }
+
+    document.getElementById('btnNext').addEventListener('click', () => {
+      current = (current + 1) % N;
+      updateSlider();
+    });
+    document.getElementById('btnPrev').addEventListener('click', () => {
+      current = (current - 1 + N) % N;
+      updateSlider();
+    });
+    viewport.addEventListener('click', e => {
+      const card = e.target.closest('.slide-item');
+      if (!card) return;
+      const idx = parseInt(card.dataset.idx);
+      if (idx !== current) { current = idx; updateSlider(); }
+    });
+
+    // Auto advance
+    setInterval(() => { current = (current + 1) % N; updateSlider(); }, 4000);
+
+    // ─── GALLERY DATA ───
+    const wallTiles = Array.from({ length: 35 }, (_, i) => ({
+      img: `images/kitchen-tiles/tile-${i + 1}.jpg`,
+      num: String(i + 1).padStart(2, '0'),
+      cat: 'wall'
+    }));
+    const floorTiles = [];
+    const allTiles = [...wallTiles, ...floorTiles];
+
+    const grid = document.getElementById('tileGrid');
+    const countLabel = document.getElementById('countLabel');
+    let activeFilter = 'all';
+
+    function renderTiles(filter) {
+      const tiles = filter === 'all' ? allTiles : (filter === 'floor' ? floorTiles : wallTiles);
+      countLabel.textContent = tiles.length + ' designs';
+      grid.innerHTML = '';
+      tiles.forEach((t, i) => {
+        const card = document.createElement('div');
+        card.className = 'tile-card';
+        card.style.setProperty('--delay', i * 50);
+        card.innerHTML = `
+      <div class="tile-img"><img src="${t.img}" alt="tile" loading="lazy"></div>
+      <div class="tile-footer">
+        <span class="tile-num">#${t.num}</span>
+        <button class="btn-book" onclick="bookTile(event,'${t.img}')">
+          <i class="fab fa-whatsapp"></i> Book Now
+        </button>
+      </div>`;
+        grid.appendChild(card);
+      });
+      // Intersection reveal
+      const io = new IntersectionObserver((entries, obs) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('reveal'); obs.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      grid.querySelectorAll('.tile-card').forEach(c => io.observe(c));
+    }
+
+    function bookTile(e, img) {
+      e.stopPropagation();
+      window.open('https://wa.me/919876543210?text=Hi%20I%20am%20interested%20in%20this%20tile%20design', '_blank');
+    }
+
+    renderTiles('all');
+
+    // FILTER
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const f = this.dataset.filter;
+        activeFilter = f;
+        renderTiles(f === 'all' ? 'all' : 'floor');
+      });
+    });
+  </script>
+
+  <link rel="stylesheet" href="css/responsive-fixes.css">
+</body>
+
+</html>

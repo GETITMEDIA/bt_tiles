@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from moonlit-druid-56b88f.netlify.app/livingroomtiles by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 10:15:59 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="icon" type="image/x-icon" href="../images/fav.png">
+  <title>Living Room Tiles · Bharathiya Tiles</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="../css/bharathiya-header.css">
+
+  <!-- Footer CSS Dependencies -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/custom-style.css">
+</head>
+
+<body>
+
+  <div class="progress-bar" id="pgBar"></div>
+  <div class="cur" id="cur"></div>
+  <div class="cur-ring" id="curRing"></div>
+
+  <!-- NAV -->
+  <header class="il-top-navbar">
+    <!-- Logo -->
+    <div class="logo il-logo">
+      <img src="../images/bt_logo.png" alt="Bharathiya Tiles Logo" class="il-logo-img">
+      <div class="logo-text il-logo-text">
+        <h2 class="il-logo-title">Bharathiya Tiles</h2>
+      </div>
+    </div>
+
+    <!-- Center Menu -->
+    <div class="nav-center il-nav-center">
+      <a href="https://www.google.com/maps/search/Bharathiya+Tiles" target="_blank" class="il-store-link"><i
+          class="fa fa-map-marker il-store-icon"></i> Store Locator</a>
+      <a href="tel:+917500275005" class="phone il-phone-link">
+        <i class="fa fa-phone il-phone-icon"></i> +91-7500275005
+      </a>
+    </div>
+
+    <!-- Right Section -->
+    <div class="nav-right il-nav-right">
+      <a href="https://search.google.com/local/writereview?placeid=ChIJr-4V5c7DqTsRz69b_2q1hK0" target="_blank"
+        class="il-review-link"><i class="fa fa-star"></i> Write a Review</a>
+      <i class="fa fa-bars il-menu-icon" onclick="toggleMenu()"></i>
+    </div>
+
+  </header>
+
+  <!-- Side Menu -->
+  <div class="side-menu" id="sideMenu">
+    <div class="close-btn" onclick="toggleMenu()">
+      <i class="fa fa-times"></i>
+    </div>
+    <div class="mobile-categories">
+
+      <a class='category' href='../index.html'>
+        <img src="../images/nav-icons/home.png">
+        <p>Home</p>
+      </a>
+
+      <a class='category' href='all-tiles.html'>
+        <img src="../images/nav-icons/tiles.png">
+        <p>Tiles</p>
+      </a>
+
+      <a class='category' href='../paints.html'>
+        <img src="../images/nav-icons/paints.png">
+        <p>Paints</p>
+      </a>
+
+      <a class='category' href='../sanitary.html'>
+        <img src="../images/nav-icons/sanitary.png">
+        <p>Sanitarywares</p>
+      </a>
+
+      <a class='category' href='../fiting.html'>
+        <img src="../images/nav-icons/cpfit.png">
+        <p>CP Fit</p>
+      </a>
+
+      <a class='category' href='../sink.html'>
+        <img src="../images/nav-icons/kitchensink.png">
+        <p>Kitchen Sinks</p>
+      </a>
+
+      <a class='category' href='../watertank.html'>
+        <img src="../images/nav-icons/watertank.png">
+        <p>Water Tank</p>
+      </a>
+
+      <a href="#" class="category">
+        <img src="../images/nav/wallcladding.jpg">
+        <p>Wall Cladding</p>
+      </a>
+
+      <a class='category' href='../manhole.html'>
+        <img src="../images/nav-icons/manhole.png">
+        <p>Manhole Covers</p>
+      </a>
+
+      <a class='category' href='../chimmey.html'>
+        <img src="../images/nav-icons/chimney.png">
+        <p>Chimney & Hobs</p>
+      </a>
+
+      <a class='category' href='../door.html'>
+        <img src="../images/nav-icons/doors.png">
+        <p>Doors</p>
+      </a>
+
+      <a class='category' href='../bathtub.html'>
+        <img src="../images/nav-icons/bathtub.png">
+        <p>Bath Tub</p>
+      </a>
+      <a class='category' href='../tile-accessories.html'>
+        <img src="../images/nav-icons/tile-accessories.png">
+        <p>Tiles Accessories</p>
+      </a>
+      <a class='category' href='../waterproofing.html'>
+        <img src="../images/nav-icons/water-proofing.png">
+        <p>Waterproofing</p>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- New Category Navbar -->
+  <section class="bt-catnav">
+
+    <button class="catnav-arrow catnav-arrow-left" aria-label="Scroll left" onclick="btCatnavScroll(this,-1)"><i
+        class="fas fa-chevron-left"></i></button>
+    <div class="catnav-bar">
+      <a href="../index.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/home.png" alt="Home"></span>
+        <span class="catnav-label">Home</span>
+      </a>
+      <a href="all-tiles.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/tiles.png" alt="Tiles"></span>
+        <span class="catnav-label">Tiles</span>
+      </a>
+      <a href="../paints.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/paints.png" alt="Paints"></span>
+        <span class="catnav-label">Paints</span>
+      </a>
+      <a href="../sanitary.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/sanitary.png" alt="Sanitarywares"></span>
+        <span class="catnav-label">Sanitarywares</span>
+      </a>
+      <a href="../fiting.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/cpfit.png" alt="CPI Fittings"></span>
+        <span class="catnav-label">CPI Fittings</span>
+      </a>
+      <a href="../sink.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/kitchensink.png" alt="Kitchen Sinks"></span>
+        <span class="catnav-label">Kitchen Sinks</span>
+      </a>
+      <a href="../watertank.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/watertank.png" alt="Water Tank"></span>
+        <span class="catnav-label">Water Tank</span>
+      </a>
+      <a href="../manhole.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/manhole.png" alt="Manhole Covers"></span>
+        <span class="catnav-label">Manhole Covers</span>
+      </a>
+      <a href="../chimmey.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/chimney.png" alt="Chimney &amp; Hobs"></span>
+        <span class="catnav-label">Chimney &amp; Hobs</span>
+      </a>
+      <a href="../door.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/doors.png" alt="Doors"></span>
+        <span class="catnav-label">Doors</span>
+      </a>
+      <a href="../bathtub.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/bathtub.png" alt="Bath Tub"></span>
+        <span class="catnav-label">Bath Tub</span>
+      </a>
+      <a href="../tile-accessories.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/tile-accessories.png" alt="Bath Tub"></span>
+        <span class="catnav-label">Tiles Accessories</span>
+      </a>
+      <a href="../waterproofing.html" class="catnav-item">
+        <span class="catnav-icon"><img src="../images/nav-icons/water-proofing.png" alt="Bath Tub"></span>
+        <span class="catnav-label">Waterproofing</span>
+      </a>
+
+    </div>
+    <button class="catnav-arrow catnav-arrow-right" aria-label="Scroll right" onclick="btCatnavScroll(this,1)"><i
+        class="fas fa-chevron-right"></i></button>
+  </section>
+  <script>
+    function btCatnavScroll(btn, dir) {
+      var section = btn.closest('.bt-catnav');
+      var bar = section && section.querySelector('.catnav-bar');
+      if (!bar) return;
+      bar.scrollBy({ left: dir * 240, behavior: 'smooth' });
+    }
+  </script>
+
+  <script>
+    (function () {
+      var current = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+      document.querySelectorAll('.bt-catnav .catnav-item').forEach(function (item) {
+        var href = (item.getAttribute('href') || '').toLowerCase();
+        if (href === current) {
+          item.classList.add('catnav-active');
+        } else {
+          item.classList.remove('catnav-active');
+        }
+      });
+    })();
+  </script>
+
+  <!-- Floating Social Icons -->
+  <div class="bt-social-float bt-social-left">
+    <a href="https://wa.me/917500275005?text=Hi%2C%20I%27m%20interested%20in%20your%20products" target="_blank"
+      rel="noopener" class="bt-social-whatsapp" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  <div class="bt-social-float bt-social-right">
+    <a href="https://www.instagram.com/bharathiyatilespondicherry/" target="_blank" rel="noopener"
+      class="bt-social-instagram" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/bharathiyatiles/" target="_blank" rel="noopener" class="bt-social-facebook"
+      title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.justdial.com/Pondicherry/Bharathiya-Tiles-Opposite-Raja-Rajeshwari-Thirumana-Mandapam-Lawspet-Pondicherry/0413PX413-X413-131019120449-D1J7_BZDET"
+      target="_blank" rel="noopener" class="bt-social-justdial" title="Justdial">
+      <img src="../images/icons/jd.png" alt="Justdial">
+    </a>
+    <a href="https://www.indiamart.com/bharathiya-tiles-pondicherry/profile.html?srsltid=AfmBOooc_xpa9SiDgxruQojzZa9PrJ9lx3-OnhUPQs5O94nqLRVmVcNa"
+      target="_blank" rel="noopener" class="bt-social-justdial" title="India-mart">
+      <img src="../images/icons/india-mart.png" alt="Justdial">
+    </a>
+  </div>
+  <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("active");
+    }
+  </script>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-blobs">
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+      <div class="blob blob3"></div>
+      <div class="blob blob4"></div>
+    </div>
+    <div class="hero-stripes"></div>
+    <!-- Floating tile previews -->
+    <div class="hero-float-tile t1"><img src="../images/tiles/elevation/living%20(1).jpg" alt=""></div>
+    <div class="hero-float-tile t2"><img src="../images/tiles/elevation/living%20(5).jpg" alt=""></div>
+    <div class="hero-float-tile t3"><img src="../images/tiles/elevation/living%20(9).jpg" alt=""></div>
+    <div class="hero-float-tile t4"><img src="../images/tiles/elevation/living%20(12).jpg" alt=""></div>
+
+    <div class="hero-content">
+      <div class="hero-tag">Premium Living Collection 2025</div>
+      <h1 class="hero-title">
+        <span class="line-warm">Living</span>
+        <span class="line-stroke">Room</span>
+        <span class="line-fill">Tiles</span>
+      </h1>
+      <p class="hero-sub">Wall Tiles · Elevation · Timeless Craft</p>
+      <div class="hero-cta-row">
+        <a href="#gallery" class="hero-btn-primary"><i class="fas fa-th"></i> View Collection</a>
+        <a href="https://wa.me/917500275005?text=Hi%20I%20am%20interested%20in%20Living%20Room%20Tiles" target="_blank"
+          class="hero-btn-ghost"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-track"></div><span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track" id="mTrack">
+      <div class="marquee-item"><span>Living Room Tiles</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Premium Finish</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Elevation Tiles</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Bharathiya Tiles</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Since 2003</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Luxury Aesthetics</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Chennai · India</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Living Room Tiles</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Premium Finish</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Elevation Tiles</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Bharathiya Tiles</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Since 2003</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Luxury Aesthetics</span><span class="dot"></span></div>
+      <div class="marquee-item"><span>Chennai · India</span><span class="dot"></span></div>
+    </div>
+  </div>
+
+  <!-- FEATURE HIGHLIGHT -->
+  <section class="highlight">
+    <div class="hl-img-col" id="hlImgCol">
+      <div class="img-mosaic">
+        <div class="mosaic-a">
+          <img src="../images/tiles/elevation/living (24).jpg" alt="Living room tile flooring">
+          <span class="mosaic-badge">Living Room</span>
+        </div>
+        <div class="mosaic-b">
+          <img src="../images/tiles/elevation/living (20).jpg" alt="Living room wall cladding tile">
+        </div>
+        <div class="mosaic-c">
+          <img src="../images/tiles/elevation/living (28).jpg" alt="Living room tile detail">
+        </div>
+      </div>
+    </div>
+    <div class="hl-text-col" id="hlTextCol">
+      <p class="hl-eyebrow">Why Choose Us</p>
+      <h2 class="hl-title">Designed For <em>Elegant</em> Everyday Living</h2>
+      <p class="hl-desc">Our living room tile collection blends premium marble and stone finishes with lasting
+        durability — crafted to bring warmth, light and a touch of luxury to the heart of your home.</p>
+      <div class="hl-features">
+        <div class="hl-feat">
+          <div class="hl-feat-icon fi1"><i class="fas fa-shield-alt"></i></div>
+          <span>Stain &amp; Scratch Resistant</span>
+        </div>
+        <div class="hl-feat">
+          <div class="hl-feat-icon fi2"><i class="fas fa-gem"></i></div>
+          <span>Premium Marble &amp; Stone Finish</span>
+        </div>
+        <div class="hl-feat">
+          <div class="hl-feat-icon fi3"><i class="fas fa-hand-sparkles"></i></div>
+          <span>Easy To Clean &amp; Maintain</span>
+        </div>
+        <div class="hl-feat">
+          <div class="hl-feat-icon fi4"><i class="fas fa-award"></i></div>
+          <span>20+ Years Of Trusted Craftsmanship</span>
+        </div>
+      </div>
+      <a href="https://wa.me/917500275005?text=Hi%2C%20I%27m%20interested%20in%20your%20living%20room%20tiles"
+        target="_blank" rel="noopener" class="hl-cta"><i class="fab fa-whatsapp"></i> Enquire Now</a>
+    </div>
+  </section>
+
+  <!-- SLIDER -->
+  <section class="slider-section">
+    <p class="section-label">Featured</p>
+    <h2 class="section-title">Our <em>Finest</em> Designs</h2>
+    <div class="slider-wrap">
+      <button class="sl-btn" id="btnPrev"><i class="fas fa-chevron-left"></i></button>
+      <div class="slider-viewport" id="sliderVp"></div>
+      <button class="sl-btn" id="btnNext"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="slider-dots" id="sliderDots"></div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section">
+    <div class="gallery-head">
+      <h2>Our <em>Collection</em></h2>
+    </div>
+    <div class="container-fluid px-0">
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-1.jpg" alt="Living tile 01" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#01</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2001','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-2.jpg" alt="Living tile 02" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#02</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2002','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-3.jpg" alt="Living tile 03" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#03</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2003','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-4.jpg" alt="Living tile 04" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#04</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2004','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-5.jpg" alt="Living tile 05" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#05</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2005','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-6.jpg" alt="Living tile 06" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#06</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2006','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-7.jpg" alt="Living tile 07" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#07</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2007','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-8.jpg" alt="Living tile 08" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#08</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2008','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-9.jpg" alt="Living tile 09" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#09</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2009','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-10.jpg" alt="Living tile 10" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#10</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2010','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-11.jpg" alt="Living tile 11" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#11</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2011','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-12.jpg" alt="Living tile 12" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#12</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2012','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-13.jpg" alt="Living tile 13" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#13</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2013','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-14.jpg" alt="Living tile 14" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#14</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2014','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-15.jpg" alt="Living tile 15" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#15</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2015','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-16.jpg" alt="Living tile 16" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#16</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2016','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-17.jpg" alt="Living tile 17" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#17</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2017','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-18.jpg" alt="Living tile 18" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#18</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2018','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-19.jpg" alt="Living tile 19" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#19</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2019','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-20.jpg" alt="Living tile 20" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#20</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2020','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-21.jpg" alt="Living tile 21" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#21</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2021','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-22.jpg" alt="Living tile 22" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#22</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2022','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-23.jpg" alt="Living tile 23" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#23</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2023','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-24.jpg" alt="Living tile 24" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#24</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2024','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-25.jpg" alt="Living tile 25" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#25</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2025','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-26.jpg" alt="Living tile 26" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#26</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2026','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-27.jpg" alt="Living tile 27" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#27</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2027','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-28.jpg" alt="Living tile 28" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#28</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2028','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-29.jpg" alt="Living tile 29" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#29</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2029','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="tile-card reveal">
+            <div class="tile-img-wrap">
+              <img src="../images/Living-room-tiles/tile-30.jpg" alt="Living tile 30" loading="lazy">
+              <div class="tile-splash"></div>
+              <div class="tile-view-btn"><i class="fas fa-expand"></i></div>
+              <div class="tile-ribbon">Living Wall</div>
+            </div>
+            <div class="tile-foot">
+              <span class="tile-num">#30</span>
+              <button class="tile-book"
+                onclick="window.open('https://wa.me/917500275005?text=Hi%20interested%20in%20living%20tile%2030','_blank')">
+                <i class="fab fa-whatsapp wa"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Main Footer -->
+  <footer class="main-footer footer-style-one">
+    <!-- Widgets Section -->
+    <div class="widgets-section">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Column 1: Logo -->
+          <div class="footer-column col-lg-3 col-sm-6 wow fadeInLeft" data-wow-delay="400ms">
+            <div class="footer-widget contact-widget">
+              <div class="logo-box">
+                <img src="../images/bt_logo.png">
+              </div>
+            </div>
+            <div class="footer-widget about-widget">
+              <h4 class="widget-title">Follow Us</h4>
+              <ul class="social-icons">
+                <li><a href="https://www.facebook.com/bharathiyatiles/" target="_blank" rel="noopener"><i
+                      class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/bharathiyatilespondicherry/" target="_blank" rel="noopener"><i
+                      class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Footer Column 2: Contact Details -->
+          <div class="footer-column col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="600ms">
+            <div class="footer-widget contact-widget">
+              <div class="widget-content">
+                <div class="content-box">
+                  <div class="icon-box">
+                    <i class="flaticon-envelope"></i>
+                  </div>
+                  <span>Mail us</span>
+                  <h6 class="title">support@bttiles.com</h6>
+                </div>
+                <div class="content-box">
+                  <div class="icon-box">
+                    <i class="flaticon-clock-3"></i>
+                  </div>
+                  <span>Open Time</span>
+                  <h6 class="title">09:45 AM - 08:00 PM (Mon - Sat)<br>09:45 AM - 02:00 PM (Sunday)</h6>
+                </div>
+                <div class="content-box">
+                  <div class="icon-box">
+                    <i class="flaticon-phone-call"></i>
+                  </div>
+                  <span>Call</span>
+                  <h6 class="title">7500275005</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Column 3: Quick Links -->
+          <div class="footer-column col-lg-2 col-sm-6 wow fadeInLeft" data-wow-delay="800ms">
+            <div class="footer-widget links-widge">
+              <h4 class="widget-title">Quick Links</h4>
+              <div class="widget-content">
+                <ul class="user-links style-two">
+                  <li><a href='../index.html'>Home</a></li>
+                  <li><a href='../about.html'>About</a></li>
+                  <li><a href="../contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Column 4: Follow Us -->
+          <div class="footer-column col-lg-3 col-sm-6 wow fadeInLeft" data-wow-delay="1000ms">
+            <div class="footer-widget links-widge">
+              <h4 class="widget-title">Our Products</h4>
+              <div class="widget-content">
+                <ul class="user-links style-two">
+                  <li><a href='../index.html'>Tiles</a></li>
+                  <li><a href='../watertank.html'>Water Tank</a></li>
+                  <li><a href='../door.html'>PVC & Wooden Door</a></li>
+                  <li><a href="all-tiles.html">Tiles Accessories</a></li>
+                  <li><a href="../page-contact.html">Sanitary Wares</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="inner-container text-center">
+          <div class="copyright-text">© 2026 Bharathiya Tiles. All rights reserved.</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-to-top scroll-to-target arrow-btn" data-target="html">
+      <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </div>
+  </footer>
+  <!--End Main Footer -->
+
+
+  <script>
+    /* ── PROGRESS BAR ── */
+    const pgBar = document.getElementById('pgBar');
+    setTimeout(() => pgBar.style.width = '60%', 150);
+    window.addEventListener('load', () => { pgBar.style.width = '100%'; setTimeout(() => { pgBar.style.opacity = '0'; }, 500); });
+    window.addEventListener('scroll', () => {
+      const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+      pgBar.style.width = pct + '%';
+    });
+
+    /* ── CURSOR ── */
+    const cur = document.getElementById('cur'), curRing = document.getElementById('curRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cur.style.left = mx + 'px'; cur.style.top = my + 'px'; });
+    (function rl() { rx += (mx - rx) * 0.1; ry += (my - ry) * 0.1; curRing.style.left = rx + 'px'; curRing.style.top = ry + 'px'; requestAnimationFrame(rl); })();
+    document.addEventListener('mouseover', e => {
+      const hov = e.target.closest('.tile-card,.sl-btn,.f-btn,.hero-btn-primary,.hero-btn-ghost,.hl-cta,.nav-cta');
+      const txt = e.target.closest('h1,h2,h3,p');
+      curRing.classList.toggle('big', !!hov);
+      curRing.classList.toggle('text-mode', !hov && !!txt);
+    });
+
+    /* ── NAV ── */
+    window.addEventListener('scroll', () => document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50));
+
+    /* ── SIDE MENU ── */
+    function toggleMenu() { document.getElementById('sideMenu').classList.toggle('open'); }
+
+    /* ── STATS COUNTER ── */
+    function countUp(el, target) {
+      let n = 0; const step = Math.ceil(target / 55);
+      const t = setInterval(() => {
+        n = Math.min(n + step, target);
+        el.textContent = n.toLocaleString() + '+';
+        if (n >= target) clearInterval(t);
+      }, 22);
+    }
+    const sIO = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('reveal');
+          const num = e.target.querySelector('.stat-num');
+          if (num && !num.dataset.done) { num.dataset.done = '1'; countUp(num, +num.dataset.count); }
+          sIO.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('.stat-card').forEach(c => sIO.observe(c));
+
+    /* ── SLIDER ── */
+    const names = ['Prism', 'Ember', 'Teal', 'Fuchsia', 'Stone', 'Onyx', 'Lava', 'Amber', 'Pearl', 'Marble', 'Sand', 'Ivory', 'Ash', 'Clay', 'Dune', 'Slate', 'Mist'];
+    const slData = Array.from({ length: 17 }, (_, i) => ({ src: `../images/tiles/elevation/living (${i + 1}).jpg`, title: names[i] || `Design ${i + 1}`, sub: 'Living Wall' }));
+    const svp = document.getElementById('sliderVp'), sdots = document.getElementById('sliderDots');
+    let cur2 = 0, N = slData.length;
+    function gPos(i) { const d = (i - cur2 + N) % N; if (d === 0) return 'pos-center'; if (d === 1) return 'pos-right'; if (d === N - 1) return 'pos-left'; if (d <= N / 2) return 'pos-far-right'; return 'pos-far-left'; }
+    function buildSl() {
+      svp.innerHTML = '';
+      slData.forEach((item, i) => {
+        const el = document.createElement('div'); el.className = 'slide-item ' + gPos(i); el.dataset.i = i;
+        el.innerHTML = `<div class="slide-img-wrap"><img src="${item.src}" alt="${item.title}" loading="lazy"><div class="slide-overlay"><h3>${item.title}</h3><p>${item.sub}</p></div></div>`;
+        svp.appendChild(el);
+      });
+      buildDots();
+    }
+    function buildDots() {
+      sdots.innerHTML = '';
+      slData.forEach((_, i) => { const d = document.createElement('div'); d.className = 's-dot' + (i === cur2 ? ' active' : ''); d.onclick = () => { cur2 = i; updSl(); }; sdots.appendChild(d); });
+    }
+    function updSl() {
+      svp.querySelectorAll('.slide-item').forEach(el => el.className = 'slide-item ' + gPos(+el.dataset.i));
+      sdots.querySelectorAll('.s-dot').forEach((d, i) => d.classList.toggle('active', i === cur2));
+    }
+    buildSl();
+    document.getElementById('btnNext').onclick = () => { cur2 = (cur2 + 1) % N; updSl(); };
+    document.getElementById('btnPrev').onclick = () => { cur2 = (cur2 - 1 + N) % N; updSl(); };
+    svp.addEventListener('click', e => { const c = e.target.closest('.slide-item'); if (c && +c.dataset.i !== cur2) { cur2 = +c.dataset.i; updSl(); } });
+    setInterval(() => { cur2 = (cur2 + 1) % N; updSl(); }, 4500);
+
+    /* ── HIGHLIGHT REVEAL ── */
+    const hlIO = new IntersectionObserver(e => { e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('reveal'); hlIO.unobserve(x.target); } }); }, { threshold: 0.2 });
+    ['hlImgCol', 'hlTextCol'].forEach(id => { const el = document.getElementById(id); if (el) hlIO.observe(el); });
+
+    /* ── PALETTE REVEAL ── */
+    const palIO = new IntersectionObserver(e => { e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('reveal'); palIO.unobserve(x.target); } }); }, { threshold: 0.2 });
+    document.querySelectorAll('.pal-item').forEach((el, i) => { el.style.transitionDelay = i * 0.06 + 's'; palIO.observe(el); });
+
+    /* ── PARTICLES CANVAS ── */
+    (function () {
+      const cv = document.getElementById('ptCanvas');
+      if (!cv) return; const ctx = cv.getContext('2d');
+      let W, H, pts = [];
+      function resize() { W = cv.width = cv.offsetWidth; H = cv.height = cv.offsetHeight; }
+      resize(); window.addEventListener('resize', resize);
+      for (let i = 0; i < 80; i++)pts.push({ x: Math.random() * 2000, y: Math.random() * H, vx: (Math.random() - .5) * .5, vy: (Math.random() - .5) * .3, r: Math.random() * 2 + .4, a: Math.random() * .6 + .1 });
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+        pts.forEach(p => {
+          p.x += p.vx; p.y += p.vy;
+          if (p.x < 0) p.x = W; if (p.x > W) p.x = 0; if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+          ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(255,240,220,${p.a})`; ctx.fill();
+        });
+        for (let i = 0; i < pts.length; i++)for (let j = i + 1; j < pts.length; j++) {
+          const dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y, d = Math.sqrt(dx * dx + dy * dy);
+          if (d < 100) { ctx.beginPath(); ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y); ctx.strokeStyle = `rgba(255,230,200,${.08 * (1 - d / 100)})`; ctx.lineWidth = .5; ctx.stroke(); }
+        }
+        requestAnimationFrame(draw);
+      }
+      draw();
+    })();
+
+    /* ── GALLERY (static Bootstrap grid) ── */
+    document.querySelectorAll('#gallery .tile-card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - .5;
+        const y = (e.clientY - r.top) / r.height - .5;
+        card.style.transform = `translateY(-8px) rotateX(${-y * 8}deg) rotateY(${x * 8}deg) scale(1.02)`;
+      });
+      card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+    });
+  </script>
+
+  <link rel="stylesheet" href="../css/responsive-fixes.css">
+</body>
+
+<!-- Mirrored from moonlit-druid-56b88f.netlify.app/livingroomtiles by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 10:16:04 GMT -->
+
+</html>

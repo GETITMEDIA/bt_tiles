@@ -1,0 +1,117 @@
+/* ===== GLOBAL RESPONSIVE REPAIR ===== */
+/* Added to fix responsiveness across all devices without altering design */
+
+html,
+body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+}
+
+/* Ensure images don't overflow */
+img,
+video,
+iframe {
+    max-width: 100% !important;
+    height: auto;
+}
+
+/* Base constraints */
+.auto-container,
+.container,
+.wrapper {
+    /* max-width: 100% !important; */
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    box-sizing: border-box !important;
+}
+
+/* General Layout Breakpoints */
+@media (max-width: 1200px) {
+
+    /* Large screens adjustments */
+    .row {
+        flex-wrap: wrap !important;
+    }
+}
+
+@media (max-width: 991px) {
+
+    /* Tablet adjustments */
+    section {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .col,
+    [class*="col-"] {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .top-navbar,
+    .header,
+    .footer {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* Mobile adjustments */
+    .nav-center,
+    .nav-right {
+        display: none !important;
+        /* Will rely on toggle menu */
+    }
+
+    .menu-toggle {
+        display: block !important;
+    }
+
+    .top-navbar {
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+    }
+
+    .category-bar {
+        justify-content: center !important;
+    }
+
+    .sec-title-two h2,
+    h1,
+    h2 {
+        font-size: 1.8rem !important;
+        line-height: 1.3 !important;
+    }
+
+    /* Specific section adjustments */
+    .testimonial-block-two,
+    .feature-block,
+    .info-box {
+        width: 100% !important;
+        margin: 10px 0 !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Small Mobile adjustments */
+    .logo img {
+        max-height: 40px !important;
+    }
+
+    .logo-text h2 {
+        font-size: 1.2rem !important;
+    }
+
+    .phone {
+        font-size: 0.8rem !important;
+        padding: 5px 10px !important;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.5rem !important;
+    }
+}

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from moonlit-druid-56b88f.netlify.app/paints by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 10:13:48 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="icon" type="image/x-icon" href="images/fav.png">
+  <title>Paints - Bharathiya Tiles</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&amp;f[]=clash-display@400,500,600,700&amp;display=swap">
+
+  <link rel="stylesheet" href="css/bharathiya-header.css">
+
+  <!-- Footer CSS Dependencies -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <header class="il-top-navbar">
+    <!-- Logo -->
+    <div class="logo il-logo">
+      <img src="images/bt_logo.png" alt="Bharathiya Tiles Logo" class="il-logo-img">
+      <div class="logo-text il-logo-text">
+        <h2 class="il-logo-title">Bharathiya Tiles</h2>
+      </div>
+    </div>
+
+    <!-- Center Menu -->
+    <div class="nav-center il-nav-center">
+      <a href="https://www.google.com/maps/search/Bharathiya+Tiles" target="_blank" class="il-store-link"><i
+          class="fa fa-map-marker il-store-icon"></i> Store Locator</a>
+      <a href="tel:+917500275005" class="phone il-phone-link">
+        <i class="fa fa-phone il-phone-icon"></i> +91-7500275005
+      </a>
+    </div>
+
+    <!-- Right Section -->
+    <div class="nav-right il-nav-right">
+      <a href="https://search.google.com/local/writereview?placeid=ChIJr-4V5c7DqTsRz69b_2q1hK0" target="_blank"
+        class="il-review-link"><i class="fa fa-star"></i> Write a Review</a>
+      <i class="fa fa-bars il-menu-icon" onclick="toggleMenu()"></i>
+    </div>
+
+  </header>
+
+  <!-- Side Menu -->
+  <div class="side-menu" id="sideMenu">
+    <div class="close-btn" onclick="toggleMenu()">
+      <i class="fa fa-times"></i>
+    </div>
+    <div class="mobile-categories">
+
+      <a class='category' href='index.html'>
+        <img src="images/nav-icons/home.png">
+        <p>Home</p>
+      </a>
+
+      <a class='category' href='all-tiles.html'>
+        <img src="images/nav-icons/tiles.png">
+        <p>Tiles</p>
+      </a>
+
+      <a class='category' href='paints.html'>
+        <img src="images/nav-icons/paints.png">
+        <p>Paints</p>
+      </a>
+
+      <a class='category' href='sanitary.html'>
+        <img src="images/nav-icons/sanitary.png">
+        <p>Sanitarywares</p>
+      </a>
+
+      <a class='category' href='fiting.html'>
+        <img src="images/nav-icons/cpfit.png">
+        <p>CP Fit</p>
+      </a>
+
+      <a class='category' href='sink.html'>
+        <img src="images/nav-icons/kitchensink.png">
+        <p>Kitchen Sinks</p>
+      </a>
+
+      <a class='category' href='watertank.html'>
+        <img src="images/nav-icons/watertank.png">
+        <p>Water Tank</p>
+      </a>
+
+      <a href="#" class="category">
+        <img src="images/nav/wallcladding.jpg">
+        <p>Wall Cladding</p>
+      </a>
+
+      <a class='category' href='manhole.html'>
+        <img src="images/nav-icons/manhole.png">
+        <p>Manhole Covers</p>
+      </a>
+
+      <a class='category' href='chimmey.html'>
+        <img src="images/nav-icons/chimney.png">
+        <p>Chimney & Hobs</p>
+      </a>
+
+      <a class='category' href='door.html'>
+        <img src="images/nav-icons/doors.png">
+        <p>Doors</p>
+      </a>
+
+      <a class='category' href='bathtub.html'>
+        <img src="images/nav-icons/bathtub.png">
+        <p>Bath Tub</p>
+      </a>
+      <a class='category' href='tile-accessories.html'>
+        <img src="images/nav-icons/tile-accessories.png">
+        <p>Tiles Accessories</p>
+      </a>
+      <a class='category' href='waterproofing.html'>
+        <img src="images/nav-icons/water-proofing.png">
+        <p>Waterproofing</p>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- New Category Navbar -->
+  <section class="bt-catnav">
+
+    <button class="catnav-arrow catnav-arrow-left" aria-label="Scroll left" onclick="btCatnavScroll(this,-1)"><i
+        class="fas fa-chevron-left"></i></button>
+    <div class="catnav-bar">
+      <a href="index.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/home.png" alt="Home"></span>
+        <span class="catnav-label">Home</span>
+      </a>
+      <a href="all-tiles.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/tiles.png" alt="Tiles"></span>
+        <span class="catnav-label">Tiles</span>
+      </a>
+      <a href="paints.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/paints.png" alt="Paints"></span>
+        <span class="catnav-label">Paints</span>
+      </a>
+      <a href="sanitary.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/sanitary.png" alt="Sanitarywares"></span>
+        <span class="catnav-label">Sanitarywares</span>
+      </a>
+      <a href="fiting.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/cpfit.png" alt="CPI Fittings"></span>
+        <span class="catnav-label">CPI Fittings</span>
+      </a>
+      <a href="sink.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/kitchensink.png" alt="Kitchen Sinks"></span>
+        <span class="catnav-label">Kitchen Sinks</span>
+      </a>
+      <a href="watertank.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/watertank.png" alt="Water Tank"></span>
+        <span class="catnav-label">Water Tank</span>
+      </a>
+      <a href="manhole.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/manhole.png" alt="Manhole Covers"></span>
+        <span class="catnav-label">Manhole Covers</span>
+      </a>
+      <a href="chimmey.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/chimney.png" alt="Chimney &amp; Hobs"></span>
+        <span class="catnav-label">Chimney &amp; Hobs</span>
+      </a>
+      <a href="door.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/doors.png" alt="Doors"></span>
+        <span class="catnav-label">Doors</span>
+      </a>
+      <a href="bathtub.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/bathtub.png" alt="Bath Tub"></span>
+        <span class="catnav-label">Bath Tub</span>
+      </a>
+      <a href="tile-accessories.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/tile-accessories.png" alt="Bath Tub"></span>
+        <span class="catnav-label">Tiles Accessories</span>
+      </a>
+      <a href="waterproofing.html" class="catnav-item">
+        <span class="catnav-icon"><img src="images/nav-icons/water-proofing.png" alt="Bath Tub"></span>
+        <span class="catnav-label">Waterproofing</span>
+      </a>
+
+    </div>
+    <button class="catnav-arrow catnav-arrow-right" aria-label="Scroll right" onclick="btCatnavScroll(this,1)"><i
+        class="fas fa-chevron-right"></i></button>
+  </section>
+  <script>
+    function btCatnavScroll(btn, dir) {
+      var section = btn.closest('.bt-catnav');
+      var bar = section && section.querySelector('.catnav-bar');
+      if (!bar) return;
+      bar.scrollBy({ left: dir * 240, behavior: 'smooth' });
+    }
+  </script>
+
+  <script>
+    (function () {
+      var current = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+      document.querySelectorAll('.bt-catnav .catnav-item').forEach(function (item) {
+        var href = (item.getAttribute('href') || '').toLowerCase();
+        if (href === current) {
+          item.classList.add('catnav-active');
+        } else {
+          item.classList.remove('catnav-active');
+        }
+      });
+    })();
+  </script>
+
+  <!-- Floating Social Icons -->
+  <div class="bt-social-float bt-social-left">
+    <a href="https://wa.me/917500275005?text=Hi%2C%20I%27m%20interested%20in%20your%20products" target="_blank"
+      rel="noopener" class="bt-social-whatsapp" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  <div class="bt-social-float bt-social-right">
+    <a href="https://www.instagram.com/bharathiyatilespondicherry/" target="_blank" rel="noopener"
+      class="bt-social-instagram" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/bharathiyatiles/" target="_blank" rel="noopener" class="bt-social-facebook"
+      title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.justdial.com/Pondicherry/Bharathiya-Tiles-Opposite-Raja-Rajeshwari-Thirumana-Mandapam-Lawspet-Pondicherry/0413PX413-X413-131019120449-D1J7_BZDET"
+      target="_blank" rel="noopener" class="bt-social-justdial" title="Justdial">
+      <img src="images/icons/jd.png" alt="Justdial">
+    </a>
+    <a href="https://www.indiamart.com/bharathiya-tiles-pondicherry/profile.html?srsltid=AfmBOooc_xpa9SiDgxruQojzZa9PrJ9lx3-OnhUPQs5O94nqLRVmVcNa"
+      target="_blank" rel="noopener" class="bt-social-justdial" title="India-mart">
+      <img src="images/icons/india-mart.png" alt="Justdial">
+    </a>
+  </div>
+  <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("active");
+    }
+  </script>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="hero-sub">introducing · berger paints</p>
+        <h1>
+          <span class="highlight">Premium colour</span><br>
+          for every bharathiya home
+        </h1>
+        <div class="hero-grid">
+          <div class="hero-pill"><i class="fa-solid fa-shield"></i> Weathercoat long life exteriors</div>
+          <div class="hero-pill"><i class="fa-solid fa-droplet"></i> Silk glamour rich interiors</div>
+          <div class="hero-pill"><i class="fa-solid fa-house-chimney"></i> Dampstop & waterproofing</div>
+          <div class="hero-pill"><i class="fa-solid fa-palette"></i> Shade matching for your tiles</div>
+        </div>
+        <div class="hero-actions">
+          <button class="btn-primary"
+            onclick="window.open('https://wa.me/917500275005?text=Hi%20I%27d%20like%20a%20paint%20quotation%20for%20my%20home','_blank')">
+            <i class="fa-brands fa-whatsapp"></i>
+            Get paint quotation
+          </button>
+          <button class="btn-secondary"
+            onclick="document.getElementById('paint-range').scrollIntoView({behavior:'smooth'})">
+            <i class="fa-solid fa-droplet"></i>
+            View paint range
+          </button>
+        </div>
+        <p class="hero-note">
+          Visit our Lawspet showroom for a guided colour consultation. We help you match Berger paints to your tiles,
+          fittings and lighting – for one continuous design.
+        </p>
+        <div class="chips-row">
+          <div class="chip"><span class="dot"></span> Authorised Berger partner</div>
+          <div class="chip"><span class="dot"></span> Interior & exterior solutions</div>
+          <div class="chip"><span class="dot"></span> Project & contractor support</div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-can-stack">
+          <img src="images/paints/paint.webp" alt="Berger paint cans at Bharathiya Tiles">
+        </div>
+        <div class="hero-tag">
+          <i class="fa-solid fa-location-dot"></i> Lawspet · Pondy-08
+        </div>
+      </div>
+    </section>
+
+    <!-- services strip -->
+    <section class="services-section">
+      <div class="services-header">
+        <h2>Professional paint services</h2>
+        <p>End‑to‑end Berger paint solutions from shade selection to clean hand‑over – powered by Bharathiya Tiles,
+          Lawspet.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <i class="fa-solid fa-brush"></i>
+          <h3>Interior repaint & fresh painting</h3>
+          <p>Hall, bedrooms and kitchen walls finished with Berger Silk range, matched to your tiles and décor.</p>
+        </article>
+        <article class="service-card">
+          <i class="fa-solid fa-city"></i>
+          <h3>Exterior weather protection</h3>
+          <p>Weathercoat systems for coastal rain & sun – ideal for independent houses and apartment elevations.</p>
+        </article>
+        <article class="service-card">
+          <i class="fa-solid fa-water"></i>
+          <h3>Waterproofing & damp treatment</h3>
+          <p>Dampstop, primers and terrace coatings to stop seepage behind bathroom tiles & roofs.</p>
+        </article>
+        <article class="service-card">
+          <i class="fa-solid fa-helmet-safety"></i>
+          <h3>Project & contractor support</h3>
+          <p>On‑site shade approval, BOQ assistance and priority delivery for builders and renovation teams.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- guarantee band -->
+    <section class="guarantee-band">
+      <div>
+        <h2>Fast, neat & colour‑perfect</h2>
+        <p>When you choose Berger paints from Bharathiya Tiles, our team helps you plan surfaces, colours and site
+          execution so your tiles, fittings and paint feel like one design.</p>
+      </div>
+      <div class="guarantee-grid">
+        <div class="guarantee-item">
+          <i class="fa-solid fa-clipboard-check"></i>
+          <div>
+            <span class="title">Shade consultation</span>
+            <span>Bring tile photos or samples – we suggest 3–4 Berger shades for every room.</span>
+          </div>
+        </div>
+        <div class="guarantee-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <span class="title">Quick quotes</span>
+            <span>Share plans or site size on WhatsApp and receive a clear paint quantity estimate.</span>
+          </div>
+        </div>
+        <div class="guarantee-item">
+          <i class="fa-solid fa-users"></i>
+          <div>
+            <span class="title">Trusted applicators</span>
+            <span>Connect with experienced painting teams familiar with Berger systems.</span>
+          </div>
+        </div>
+        <div class="guarantee-item">
+          <i class="fa-solid fa-shield-heart"></i>
+          <div>
+            <span class="title">After‑sales support</span>
+            <span>Help with touch‑ups, additional rooms and future repaint cycles.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- how it works block -->
+    <section class="how-section">
+      <div class="how-copy">
+        <h2>How our paint service works</h2>
+        <p class="lead">Simple, guided steps from showroom to finished walls – with the same Bharathiya service you know
+          from tiles.</p>
+        <div class="how-steps">
+          <div class="how-step">
+            <div class="how-step-number">1</div>
+            <div>
+              <strong>Visit or WhatsApp your requirement</strong>
+              <span>Share photos, videos or plan; tell us which rooms and surfaces you want to refresh.</span>
+            </div>
+          </div>
+          <div class="how-step">
+            <div class="how-step-number">2</div>
+            <div>
+              <strong>Choose Berger shades with our team</strong>
+              <span>We match paints to your floor & wall tiles, kitchen and bathroom fittings.</span>
+            </div>
+          </div>
+          <div class="how-step">
+            <div class="how-step-number">3</div>
+            <div>
+              <strong>Get applicator & site schedule</strong>
+              <span>Connect to trusted painters, finalize timing and get neat, on‑time completion.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="how-visual">
+        <img src="images/paints/barthipaint.png" alt="Painting crew applying Berger paints">
+      </div>
+    </section>
+    <section class="paint-products">
+
+      <h1 class="section-title">Berger Premium Paint Collection</h1>
+      <p class="section-subtitle">High Quality Interior & Exterior Paints for Your Home</p>
+
+      <div class="product-grid">
+
+        <div class="product">
+          <img src="images/paints/silk1.webp" alt="Berger Silk Paint">
+          <h3>Berger Silk Paint</h3>
+          <a href="https://wa.me/917500275005?text=I%20want%20Berger%20Silk%20Paint" class="order-btn"
+            target="_blank">Order Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/paints/2.webp" alt="Berger Easy Clean">
+          <h3>Berger Easy Clean</h3>
+          <a href="https://wa.me/917500275005?text=I%20want%20Berger%20Easy%20Clean%20Paint" class="order-btn"
+            target="_blank">Order Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/paints/3.webp" alt="Berger Weather Coat">
+          <h3>Berger Weather Coat</h3>
+          <a href="https://wa.me/917500275005?text=I%20want%20Berger%20Weather%20Coat" class="order-btn"
+            target="_blank">Order Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/paints/4.webp" alt="Berger Weather Coat">
+          <h3>Berger Weather Coat</h3>
+          <a href="https://wa.me/917500275005?text=I%20want%20Berger%20Weather%20Coat" class="order-btn"
+            target="_blank">Order Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/paints/5.webp" alt="Berger Exterior Paint">
+          <h3>Berger Exterior Paint</h3>
+          <a href="https://wa.me/917500275005?text=I%20want%20Berger%20Exterior%20Paint" class="order-btn"
+            target="_blank">Order Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/paints/6.webp" alt="Berger Wall Paint">
+          <h3>Berger Wall Paint</h3>
+          <a href="https://wa.me/917500275005?text=I%20want%20Berger%20Wall%20Paint" class="order-btn"
+            target="_blank">Order Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/paints/7.webp" alt="Berger Interior Paint">
+          <h3>Berger Interior Paint</h3>
+          <a href="https://wa.me/917500275005?text=I%20want%20Berger%20Interior%20Paint" class="order-btn"
+            target="_blank">Order Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/paints/8.webp" alt="Berger Premium Paint">
+          <h3>Berger Premium Paint</h3>
+          <a href="https://wa.me/917500275005?text=I%20want%20Berger%20Premium%20Paint" class="order-btn"
+            target="_blank">Order Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/paints/9.webp" alt="Berger Wall Finish">
+          <h3>Berger Wall Finish</h3>
+          <a href="https://wa.me/917500275005?text=I%20want%20Berger%20Wall%20Finish" class="order-btn"
+            target="_blank">Order Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/paints/10.webp" alt="Berger Paint Coat">
+          <h3>Berger Paint Coat</h3>
+          <a href="https://wa.me/917500275005?text=I%20want%20Berger%20Paint%20Coat" class="order-btn"
+            target="_blank">Order Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/paints/12.webp" alt="Berger Paint Finish">
+          <h3>Berger Paint Finish</h3>
+          <a href="https://wa.me/917500275005?text=I%20want%20Berger%20Paint%20Finish" class="order-btn"
+            target="_blank">Order Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/paints/13.webp" alt="Berger Paint Pro">
+          <h3>Berger Paint Pro</h3>
+          <a href="https://wa.me/917500275005?text=I%20want%20Berger%20Paint%20Pro" class="order-btn"
+            target="_blank">Order Now</a>
+        </div>
+
+        <div class="product">
+          <img src="images/paints/14.webp" alt="Berger Weather Shield">
+          <h3>Berger Weather Shield</h3>
+          <a href="https://wa.me/917500275005?text=I%20want%20Berger%20Weather%20Shield" class="order-btn"
+            target="_blank">Order Now</a>
+        </div>
+
+      </div>
+    </section>
+    <section id="paint-range">
+      <div class="section-heading">
+        <h2>Paint systems we stock</h2>
+        <p>From exterior protection to luxurious interiors and problem-solving primers, choose the right Berger system
+          for each surface. Our team helps you combine tiles + paint for a complete room story.</p>
+      </div>
+
+      <div class="paint-grid">
+        <article class="paint-card">
+          <div class="paint-card-header">
+            <h3 class="paint-card-title">Weathercoat Long Life</h3>
+            <span class="paint-tag">exterior</span>
+          </div>
+          <div class="paint-tones">
+            <div class="tone blue"></div>
+            <div class="tone violet"></div>
+            <div class="tone gold"></div>
+            <div class="tone neutral"></div>
+          </div>
+          <p class="paint-copy">
+            High performance exterior emulsion designed for coastal weather. Strong resistance to UV, algae and rain –
+            perfect with our façade tiles and elevation claddings.
+          </p>
+          <div class="paint-meta">
+            <span><strong>Finish:</strong> Rich matte</span>
+            <span><strong>Ideal for:</strong> Front elevation, side walls</span>
+          </div>
+          <div class="paint-cta-row">
+            <button class="btn-chip primary"
+              onclick="window.open('https://wa.me/917500275005?text=I%20need%20Berger%20Weathercoat%20Long%20Life%20for%20my%20home','_blank')">
+              <i class="fa-brands fa-whatsapp"></i> Get quote
+            </button>
+            <button class="btn-chip ghost"
+              onclick="window.open('https://www.bergerpaints.com/products/exterior-walls/weathercoat-long-life','_blank')">
+              <i class="fa-solid fa-up-right-from-square"></i> Details
+            </button>
+          </div>
+        </article>
+
+        <article class="paint-card">
+          <div class="paint-card-header">
+            <h3 class="paint-card-title">Silk Glamour</h3>
+            <span class="paint-tag">interior</span>
+          </div>
+          <div class="paint-tones">
+            <div class="tone violet"></div>
+            <div class="tone gold"></div>
+            <div class="tone neutral"></div>
+          </div>
+          <p class="paint-copy">
+            Ultra-smooth, stain-resistant luxury interior emulsion that pairs beautifully with glossy wall tiles, veneer
+            panels and premium fittings in your living and bedroom spaces.
+          </p>
+          <div class="paint-meta">
+            <span><strong>Finish:</strong> Soft sheen</span>
+            <span><strong>Ideal for:</strong> Living, dining, bedroom</span>
+          </div>
+          <div class="paint-cta-row">
+            <button class="btn-chip primary"
+              onclick="window.open('https://wa.me/917500275005?text=I%20need%20Berger%20Silk%20Glamour%20for%20my%20home','_blank')">
+              <i class="fa-brands fa-whatsapp"></i> Get quote
+            </button>
+            <button class="btn-chip ghost"
+              onclick="window.open('https://www.bergerpaints.com/products/interior-walls/silk-glamour','_blank')">
+              <i class="fa-solid fa-up-right-from-square"></i> Details
+            </button>
+          </div>
+        </article>
+
+        <article class="paint-card">
+          <div class="paint-card-header">
+            <h3 class="paint-card-title">Dampstop Advanced</h3>
+            <span class="paint-tag">solutions</span>
+          </div>
+          <div class="paint-tones">
+            <div class="tone blue"></div>
+            <div class="tone neutral"></div>
+          </div>
+          <p class="paint-copy">
+            Durable damp-proof coating for terraces, bathrooms, and wet walls.” </p>
+          <div class="paint-meta">
+            <span><strong>Finish:</strong> Film build</span>
+            <span><strong>Ideal for:</strong> Bathrooms, terrace, basements</span>
+          </div>
+          <div class="paint-cta-row">
+            <button class="btn-chip primary"
+              onclick="window.open('https://wa.me/917500275005?text=I%20need%20Berger%20Dampstop%20Advanced%20for%20treatment','_blank')">
+              <i class="fa-brands fa-whatsapp"></i> Get quote
+            </button>
+            <button class="btn-chip ghost"
+              onclick="window.open('https://www.bergerpaints.com/products/water-proofing/dampstop-advanced','_blank')">
+              <i class="fa-solid fa-up-right-from-square"></i> Details
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="shade-strip">
+        <span class="label">colour journeys we match</span>
+        <div class="shade-strip-swatches">
+          <span class="shade-swatch" style="background:#001b3f;"></span>
+          <span class="shade-swatch" style="background:#0047b3;"></span>
+          <span class="shade-swatch" style="background:#5b6fff;"></span>
+          <span class="shade-swatch" style="background:#ffb347;"></span>
+          <span class="shade-swatch" style="background:#ffe66d;"></span>
+        </div>
+        <div class="shade-strip-cta">
+          <i class="fa-solid fa-palette"></i> Bring your tile photo – we suggest 3–4 Berger shades for each room.
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- Main Footer -->
+  <footer class="main-footer footer-style-one">
+    <!-- Widgets Section -->
+    <div class="widgets-section">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Column 1: Logo -->
+          <div class="footer-column col-lg-3 col-sm-6 wow fadeInLeft" data-wow-delay="400ms">
+            <div class="footer-widget contact-widget">
+              <div class="logo-box">
+                <img src="images/bt_logo.png">
+              </div>
+            </div>
+            <div class="footer-widget about-widget">
+              <h4 class="widget-title">Follow Us</h4>
+              <ul class="social-icons">
+                <li><a href="https://www.facebook.com/bharathiyatiles/" target="_blank" rel="noopener"><i
+                      class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/bharathiyatilespondicherry/" target="_blank" rel="noopener"><i
+                      class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Footer Column 2: Contact Details -->
+          <div class="footer-column col-lg-4 col-sm-6 wow fadeInLeft" data-wow-delay="600ms">
+            <div class="footer-widget contact-widget">
+              <div class="widget-content">
+                <div class="content-box">
+                  <div class="icon-box">
+                    <i class="flaticon-envelope"></i>
+                  </div>
+                  <span>Mail us</span>
+                  <h6 class="title">support@bttiles.com</h6>
+                </div>
+                <div class="content-box">
+                  <div class="icon-box">
+                    <i class="flaticon-clock-3"></i>
+                  </div>
+                  <span>Open Time</span>
+                  <h6 class="title">09:45 AM - 08:00 PM (Mon - Sat)<br>09:45 AM - 02:00 PM (Sunday)</h6>
+                </div>
+                <div class="content-box">
+                  <div class="icon-box">
+                    <i class="flaticon-phone-call"></i>
+                  </div>
+                  <span>Call</span>
+                  <h6 class="title">7500275005</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Column 3: Quick Links -->
+          <div class="footer-column col-lg-2 col-sm-6 wow fadeInLeft" data-wow-delay="800ms">
+            <div class="footer-widget links-widge">
+              <h4 class="widget-title">Quick Links</h4>
+              <div class="widget-content">
+                <ul class="user-links style-two">
+                  <li><a href='index.html'>Home</a></li>
+                  <li><a href='about.html'>About</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Column 4: Follow Us -->
+          <div class="footer-column col-lg-3 col-sm-6 wow fadeInLeft" data-wow-delay="1000ms">
+            <div class="footer-widget links-widge">
+              <h4 class="widget-title">Our Products</h4>
+              <div class="widget-content">
+                <ul class="user-links style-two">
+                  <li><a href='index.html'>Tiles</a></li>
+                  <li><a href='watertank.html'>Water Tank</a></li>
+                  <li><a href='door.html'>PVC & Wooden Door</a></li>
+                  <li><a href="all-tiles.html">Tiles Accessories</a></li>
+                  <li><a href="page-contact.html">Sanitary Wares</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="inner-container text-center">
+          <div class="copyright-text">© 2026 Bharathiya Tiles. All rights reserved.</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-to-top scroll-to-target arrow-btn" data-target="html">
+      <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </div>
+  </footer>
+  <!--End Main Footer -->
+
+  <script>
+    function showProducts(category) {
+
+      let grids = document.querySelectorAll('.product-grid');
+
+      grids.forEach(grid => {
+        grid.style.display = "none";
+      });
+
+      document.getElementById(category).style.display = "grid";
+
+    } function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("open");
+    }
+    var el_745347293942343209 = document.querySelector(".menu-toggle"); if (el_745347293942343209) el_745347293942343209.onclick = toggleMenu;
+  </script>
+
+
+
+
+  <link rel="stylesheet" href="css/responsive-fixes.css">
+</body>
+
+<!-- Mirrored from moonlit-druid-56b88f.netlify.app/paints by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 10:13:55 GMT -->
+
+</html>
