@@ -1,0 +1,28 @@
+# --- SEO: one canonical host -------------------------------------------------
+# http -> https is already enforced by the hosting CDN (verified 301).
+RewriteEngine On
+
+# www -> non-www
+RewriteCond %{HTTP_HOST} ^www\.bttiles\.com$ [NC]
+RewriteRule ^(.*)$ https://bttiles.com/$1 [L,R=301]
+
+# /index.html -> /  (only for direct requests, avoids loops)
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ https://bttiles.com/ [L,R=301]
+
+# --- Speed (non-visual): compression + browser caching -----------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json application/xml image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/avif "access plus 30 days"
+  ExpiresByType video/mp4 "access plus 30 days"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+</IfModule>

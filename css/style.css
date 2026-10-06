@@ -211,6 +211,12 @@ h2 {
   line-height: var(--line-height-heading);
 }
 
+/* Former <h1> elements demoted to <h2> for SEO heading order: keep their original look */
+.keep-h1-style {
+  font-size: var(--h1-font-size);
+  line-height: var(--line-height-heading-h1);
+}
+
 h3 {
   font-size: var(--h3-font-size);
   font-weight: var(--h3-font-weight);
@@ -1841,7 +1847,7 @@ Section Title
   background-color: var(--theme-color1);
 }
 
-.sec-title-two h2 {
+.sec-title-two h2, .sec-title-two h1 {
   position: relative;
   display: block;
   font-size: var(--sec-title-font-size);
@@ -1854,14 +1860,14 @@ Section Title
 }
 
 @media (max-width: 991.98px) {
-  .sec-title-two h2 {
+  .sec-title-two h2, .sec-title-two h1 {
     font-size: 44px;
     line-height: 55px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .sec-title-two h2 {
+  .sec-title-two h2, .sec-title-two h1 {
     font-size: 34px;
     line-height: 42px;
   }
@@ -14403,7 +14409,7 @@ body {
   font-size: 14px;
 }
 
-.sec-title-two h2 {
+.sec-title-two h2, .sec-title-two h1 {
   color: #fff;
 }
 
@@ -14498,7 +14504,7 @@ body {
 
 /* Responsive */
 @media (max-width: 991px) {
-  .sec-title-two h2 {
+  .sec-title-two h2, .sec-title-two h1 {
     font-size: 2rem;
   }
 
@@ -14513,7 +14519,7 @@ body {
     height: 50px;
   }
 
-  .sec-title-two h2 {
+  .sec-title-two h2, .sec-title-two h1 {
     font-size: 1.6rem;
   }
 }

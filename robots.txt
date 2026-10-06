@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /fonts/*.html
+Disallow: /images/resource/*.html
+
+Sitemap: https://bttiles.com/sitemap.xml
